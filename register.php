@@ -8,7 +8,7 @@ $time = $_POST['time'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-$sql = "INSERT INTO appointments 
+$sql = "INSERT INTO bdd_project
 (first_name, last_name, date, time, phone, message)
 VALUES ('$first', '$last', '$date', '$time', '$phone', '$message')";
 
