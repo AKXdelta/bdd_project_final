@@ -1626,9 +1626,7 @@
 .icon-trash:before {
   content: "\f1f8";
 }
-.icon-copyright:before {
-  content: "\f1f9";
-}
+
 .icon-at:before {
   content: "\f1fa";
 }
@@ -2931,9 +2929,7 @@
 .icon-control_point_duplicate:before {
   content: "\e3bb";
 }
-.icon-copyright2:before {
-  content: "\e90c";
-}
+
 .icon-mode_edit:before {
   content: "\e254";
 }
