@@ -85,13 +85,13 @@
 	              <h2 class="h4">Contact Information</h2>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+	              <p><span>Address:</span> Bd Béni Amir , BP 77 , Khouribga</p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+	              <p><span>Phone:</span> <a href="tel://1234567920">+212 8255555</a></p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+	              <p><span>Email:</span> <a href="mailto:dailydose@gmail.com">dailydose@gmail.com</a></p>
 	            </div>
 	            <div class="col-md-12 mb-3">
 	              <p><span>Website:</span> <a href="#">yoursite.com</a></p>
@@ -137,7 +137,7 @@
           <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About Us</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p>Daily Dose is a café and restaurant designed for everyday moments.We serve quality coffee, tasty meals, and a warm atmosphere where you can relax, work, or share good times.Your daily dose of comfort, flavor, and good vibes.</p>
               
             </div>
           </div>
