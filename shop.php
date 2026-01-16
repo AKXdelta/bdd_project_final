@@ -105,7 +105,7 @@
 						    					<div class="text text-center pt-4">
 						    						<h3><a href="product-single.php">Coffee Capuccino</a></h3>
 						    						<p>A small river named Duden flows by their place and supplies</p>
-						    						<p class="price"><span>$5.90</span></p>
+						    						<p class="price"><span>60 DH</span></p>
 						    						<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
 						    					</div>
 						    				</div>
@@ -116,7 +116,7 @@
 						    					<div class="text text-center pt-4">
 						    						<h3><a href="product-single.php">Coffee Capuccino</a></h3>
 						    						<p>A small river named Duden flows by their place and supplies</p>
-						    						<p class="price"><span>$5.90</span></p>
+						    						<p class="price"><span>50 DH</span></p>
 						    						<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
 						    					</div>
 						    				</div>
@@ -127,7 +127,7 @@
 						    					<div class="text text-center pt-4">
 						    						<h3><a href="product-single.php">Coffee Capuccino</a></h3>
 						    						<p>A small river named Duden flows by their place and supplies</p>
-						    						<p class="price"><span>$5.90</span></p>
+						    						<p class="price"><span>70 DH</span></p>
 						    						<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
 						    					</div>
 						    				</div>
@@ -138,7 +138,7 @@
 						    					<div class="text text-center pt-4">
 						    						<h3><a href="product-single.php">Coffee Capuccino</a></h3>
 						    						<p>A small river named Duden flows by their place and supplies</p>
-						    						<p class="price"><span>$5.90</span></p>
+						    						<p class="price"><span>80 DH</span></p>
 						    						<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
 						    					</div>
 						    				</div>
@@ -154,7 +154,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>50 dh</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -165,7 +165,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>50 dba_handlers</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -176,7 +176,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>30 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -187,7 +187,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>40 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -198,7 +198,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>60 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -209,7 +209,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>30 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -225,7 +225,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Lemonade Juice</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>80 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -236,7 +236,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Pineapple Juice</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>50 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -247,7 +247,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Soda Drinks</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>90 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -258,7 +258,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Lemonade Juice</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>70 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -269,7 +269,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Pineapple Juice</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>50 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -318,7 +318,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Hot Cake Honey</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>50 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -329,7 +329,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Hot Cake Honey</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>50 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -340,7 +340,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Hot Cake Honey</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>30 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -351,7 +351,7 @@
 		              				<div class="text">
 		              					<h3><a href="product-single.php">Hot Cake Honey</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>60 DH</span></p>
 		              					<p><a href="cart.php" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
