@@ -193,50 +193,41 @@
 	          <h2 class="mb-4">Our Story</h2>
 	        </div>
 	        <div>
-	  				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+	  				<p>From the moment guests arrive, a world of flavors unfolds. The warm atmosphere, refined décor, and inviting aromas create an experience that goes beyond dining. Each dish is prepared with care, combining fresh ingredients, culinary tradition, and creative inspiration. Guided by passion and expertise, the kitchen offers a journey of taste where every plate tells a story. More than a restaurant, it is a place to enjoy, share, and create unforgettable moments.</p>
 	  			</div>
   			</div>
     	</div>
     </section>
 
-    <section class="ftco-section ftco-services">
-    	<div class="container">
-    		<div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-choices"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Easy to Order</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
+                                <section class="ftco-section ftco-services">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 ftco-animate">
+        <div class="media d-block text-center block-6 services">
+          <div class="icon d-flex justify-content-center align-items-center mb-5">
+            <span class="flaticon-choices"></span>
           </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-delivery-truck"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Fastest Delivery</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-coffee-bean"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Quality Coffee</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
+          <div class="media-body">
+            <h3 class="heading">Easy to Order</h3>
           </div>
         </div>
-    	</div>
-    </section>
+      </div>
+
+      <div class="col-md-4 ftco-animate">
+        <div class="media d-block text-center block-6 services">
+          <div class="icon d-flex justify-content-center align-items-center mb-5">
+            <span class="flaticon-delivery-truck"></span>
+          </div>
+          <div class="media-body">
+            <h3 class="heading">Fastest Delivery</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section class="ftco-section">
     	<div class="container">
@@ -245,30 +236,35 @@
     				<div class="heading-section text-md-right ftco-animate">
 	          	<span class="subheading">Discover</span>
 	            <h2 class="mb-4">Our Menu</h2>
-	            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-	            <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">View Full Menu</a></p>
+	            <p class="mb-4">Step into a world of flavors and aromas. Behind every door, behind every plate, lies a story of fresh ingredients, creativity, and culinary passion. Our chefs craft each dish with care, blending tradition and innovation to bring unforgettable tastes to your table. Explore our menu and let your taste buds embark on a journey of delight.</p>
+	            <p>
+                  <a href="menu.php" target="_blank" class="btn btn-primary btn-outline-primary px-4 py-3">
+                    View Full Menu
+                     </a>
+                     </p>
+
 	          </div>
     			</div>
     			<div class="col-md-6">
     				<div class="row">
     					<div class="col-md-6">
     						<div class="menu-entry">
-		    					<a href="#" class="img" style="background-image: url(images/menu-1.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/rest4.jpg);"></a>
 		    				</div>
     					</div>
     					<div class="col-md-6">
     						<div class="menu-entry mt-lg-4">
-		    					<a href="#" class="img" style="background-image: url(images/menu-2.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/restau6.jpg);"></a>
 		    				</div>
     					</div>
     					<div class="col-md-6">
     						<div class="menu-entry">
-		    					<a href="#" class="img" style="background-image: url(images/menu-3.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/restau7.jpg);"></a>
 		    				</div>
     					</div>
     					<div class="col-md-6">
     						<div class="menu-entry mt-lg-4">
-		    					<a href="#" class="img" style="background-image: url(images/menu-4.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/restau3.webp);"></a>
 		    				</div>
     					</div>
     				</div>
@@ -277,7 +273,7 @@
     	</div>
     </section>
 
-    <section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/bg_2.jpg);" data-stellar-background-ratio="0.5">
+    <section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/restau7.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center">
@@ -331,51 +327,79 @@
           <div class="col-md-7 heading-section ftco-animate text-center">
           	<span class="subheading">Discover</span>
             <h2 class="mb-4">Best Coffee Sellers</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p>Step into a world of rich aromas and perfectly roasted beans. From classic espressos to creamy lattes, each cup is crafted with passion and care. Our coffees are sourced from the finest beans, roasted to perfection, and brewed to delight your senses. Discover your favorite blend and enjoy a cozy moment, sip by sip.</p>
           </div>
         </div>
         <div class="row">
         	<div class="col-md-3">
         		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-1.jpg);"></a>
+    					<a href="#" class="img" style="background-image: url(images/capu.avif);"></a>
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    						<p class="price"><span>60.00DHS</span></p>
+							       <form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Coffee Capuccino">
+                              <input type="hidden" name="price" value="60.00DHS">
+                              <input type="hidden" name="image" value="images/capu.avif">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
     					</div>
     				</div>
         	</div>
         	<div class="col-md-3">
         		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-2.jpg);"></a>
+    					<a href="#" class="img" style="background-image: url(images/espresso.avif);"></a>
     					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    						<h3><a href="#">Espresso</a></h3>
+    						<p class="price"><span>55.00DHS</span></p>
+							 <form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Espresso">
+                              <input type="hidden" name="price" value="55.00DHS">
+                              <input type="hidden" name="image" value="images/espresso.avif">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
     					</div>
     				</div>
         	</div>
         	<div class="col-md-3">
         		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-3.jpg);"></a>
+    					<a href="#" class="img" style="background-image: url(images/cafeit.webp);"></a>
     					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    						<h3><a href="#">Café noir italien</a></h3>
+    						<p class="price"><span>65.00DHS</span></p>
+    						<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Café noir italien">
+                              <input type="hidden" name="price" value="65.00DHS">
+                              <input type="hidden" name="image" value="images/menu-3.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
     					</div>
     				</div>
         	</div>
         	<div class="col-md-3">
         		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-4.jpg);"></a>
+    					<a href="#" class="img" style="background-image: url(images/latte.webp);"></a>
     					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+    						<h3><a href="#">Latte</a></h3>
+    						<p class="price"><span>70.00DHS</span></p>
+    						<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Latte">
+                              <input type="hidden" name="price" value="70.00DHS">
+                              <input type="hidden" name="image" value="images/latte.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
     					</div>
     				</div>
         	</div>
@@ -383,48 +407,13 @@
     	</div>
     </section>
 
-    <section class="ftco-gallery">
-    	<div class="container-wrap">
-    		<div class="row no-gutters">
-					<div class="col-md-3 ftco-animate">
-						<a href="gallery.php" class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-1.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-search"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="gallery.php" class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-2.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-search"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="gallery.php" class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-3.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-search"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="gallery.php" class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-4.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-search"></span>
-    					</div>
-						</a>
-					</div>
-        </div>
-    	</div>
-    </section>
-
-		<section class="ftco-menu">
+		<section class="ftco-menu mb-5 pb-5">
     	<div class="container">
     		<div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Discover</span>
-            <h2 class="mb-4">Our Products</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          	<span class="subheading">Découvrez</span>
+            <h2 class="mb-4">Nos Meilleurs Produits</h2>
+            
           </div>
         </div>
     		<div class="row d-md-flex">
@@ -432,11 +421,11 @@
 		    		<div class="row">
 		          <div class="col-md-12 nav-link-wrap mb-5">
 		            <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-		              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Main Dish</a>
+		              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Nos Plats</a>
 
-		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Drinks</a>
+		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Nos boissons</a>
 
-		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Desserts</a>
+		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Nos Desserts</a>
 		            </div>
 		          </div>
 		          <div class="col-md-12 d-flex align-items-center">
@@ -447,37 +436,98 @@
 		              	<div class="row">
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dish-1.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/thon.webp);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Grilled Beef</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Thon rouge de Méditerranée mi-cuit</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                             <input type="hidden" name="name" value="Thon rouge de Méditerranée mi-cuit">
+                                             <input type="hidden" name="price" value="270.00">
+                                             <input type="hidden" name="image" value="images/thon.webp">
+
+                                             <button type="submit" class="btn btn-primary btn-outline-primary">
+                                              Add to cart
+                                              </button>
+                                           </form>
+
 		              				</div>
 		              			</div>
 		              		</div>
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dish-2.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/cote.jpg);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Grilled Beef</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Côte de veau rôtie au sautoir</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Côte de veau rôtie au sautoir">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/cote.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+
 		              				</div>
 		              			</div>
 		              		</div>
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dish-3.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/saumon.jpg);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Grilled Beef</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Saumon grillé</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Saumon grillé">
+                                        <input type="hidden" name="price" value="260.0">
+                                        <input type="hidden" name="image" value="images/saumon.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/canard.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Magret de canard rôti aux épices</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Magret de canard rôti aux épices">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/canard.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/rissoto.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Risotto à la truffe noire</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Risotto à la truffe noire">
+                                        <input type="hidden" name="price" value="270.00">
+                                        <input type="hidden" name="image" value="images/rissoto.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		
+		              		
 		              	</div>
 		              </div>
 
@@ -485,34 +535,53 @@
 		                <div class="row">
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/drink-1.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/orange.webp);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Lemonade Juice</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Jus d'orange</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus d'orange">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/orange.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/drink-2.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/citron.jpg);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Pineapple Juice</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Jus de citron</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus de citron">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/citron.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/drink-3.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/coco.avif);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Soda Drinks</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Lait de coco</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Lait de coco">
+                                        <input type="hidden" name="price" value="60.0">
+                                        <input type="hidden" name="image" value="images/coco.avif">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -523,34 +592,69 @@
 		                <div class="row">
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dessert-1.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/framb2.jpg);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Hot Cake Honey</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Cheesecake framboise</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Cheesecake framboise">
+                                        <input type="hidden" name="price" value="100.0">
+                                        <input type="hidden" name="image" value="images/framb2.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dessert-2.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/fondant.webp);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Hot Cake Honey</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Fondant au chocolat</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fondant au chocolat">
+                                        <input type="hidden" name="price" value="90.0">
+                                        <input type="hidden" name="image" value="images/fondant.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dessert-3.jpg);"></a>
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pavlova.webp);"></a>
 		              				<div class="text">
-		              					<h3><a href="#">Hot Cake Honey</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<h3><a href="#">Pavlova fruits rouges</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Pavlova fruits rouges">
+                                        <input type="hidden" name="price" value="170.0">
+                                        <input type="hidden" name="image" value="images/Pavlova.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pommes.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Fine tarte aux pommes</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fine tarte aux pommes">
+                                        <input type="hidden" name="price" value="95.0">
+                                        <input type="hidden" name="image" value="images/Pommes.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -564,145 +668,6 @@
     	</div>
     </section>
 
-    <section class="ftco-section img" id="ftco-testimony" style="background-image: url(images/bg_1.jpg);"  data-stellar-background-ratio="0.5">
-    	<div class="overlay"></div>
-	    <div class="container">
-	      <div class="row justify-content-center mb-5">
-	        <div class="col-md-7 heading-section text-center ftco-animate">
-	        	<span class="subheading">Testimony</span>
-	          <h2 class="mb-4">Customers Says</h2>
-	          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="container-wrap">
-	      <div class="row d-flex no-gutters">
-	        <div class="col-lg align-self-sm-end ftco-animate">
-	          <div class="testimony">
-	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small.&rdquo;</p>
-	              </blockquote>
-	              <div class="author d-flex mt-4">
-	                <div class="image mr-3 align-self-center">
-	                  <img src="images/person_1.jpg" alt="">
-	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-	              </div>
-	          </div>
-	        </div>
-	        <div class="col-lg align-self-sm-end">
-	          <div class="testimony overlay">
-	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
-	              </blockquote>
-	              <div class="author d-flex mt-4">
-	                <div class="image mr-3 align-self-center">
-	                  <img src="images/person_2.jpg" alt="">
-	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-	              </div>
-	          </div>
-	        </div>
-	        <div class="col-lg align-self-sm-end ftco-animate">
-	          <div class="testimony">
-	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small  line of blind text by the name. &rdquo;</p>
-	              </blockquote>
-	              <div class="author d-flex mt-4">
-	                <div class="image mr-3 align-self-center">
-	                  <img src="images/person_3.jpg" alt="">
-	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-	              </div>
-	          </div>
-	        </div>
-	        <div class="col-lg align-self-sm-end">
-	          <div class="testimony overlay">
-	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however.&rdquo;</p>
-	              </blockquote>
-	              <div class="author d-flex mt-4">
-	                <div class="image mr-3 align-self-center">
-	                  <img src="images/person_2.jpg" alt="">
-	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-	              </div>
-	          </div>
-	        </div>
-	        <div class="col-lg align-self-sm-end ftco-animate">
-	          <div class="testimony">
-	            <blockquote>
-	              <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small  line of blind text by the name. &rdquo;</p>
-	            </blockquote>
-	            <div class="author d-flex mt-4">
-	              <div class="image mr-3 align-self-center">
-	                <img src="images/person_3.jpg" alt="">
-	              </div>
-	              <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </section>
-
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Recent from blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 10, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 10, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text py-4 d-block">
-              	<div class="meta">
-                  <div><a href="#">Sept 10, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 		
 		<section class="ftco-appointment">
