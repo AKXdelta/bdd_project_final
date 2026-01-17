@@ -104,7 +104,7 @@
             	<div class="row">
             		<div class="col-md-6">
 	                <div class="form-group">
-	                  <input type="text" name ="name" class="form-control" placeholder="Your Name" required>
+	                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
 	                </div>
                 </div>
                 <div class="col-md-6">
