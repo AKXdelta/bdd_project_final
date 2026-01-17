@@ -1,3 +1,9 @@
+<?php
+session_start();
+$grandTotal = isset($_SESSION['grandTotal']) ? $_SESSION['grandTotal'] : 0;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -164,29 +170,27 @@
 
 
 
-	          <div class="row mt-5 pt-3 d-flex">
-	          	<div class="col-md-6 d-flex">
-	          		<div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
-	          			<h3 class="billing-heading mb-4">Cart Total</h3>
-	          			<p class="d-flex">
-		    						<span>Subtotal</span>
-		    						<span>$20.60</span>
-		    					</p>
-		    					<p class="d-flex">
-		    						<span>Delivery</span>
-		    						<span>$0.00</span>
-		    					</p>
-		    					<p class="d-flex">
-		    						<span>Discount</span>
-		    						<span>$3.00</span>
-		    					</p>
-		    					<hr>
-		    					<p class="d-flex total-price">
-		    						<span>Total</span>
-		    						<span>$17.60</span>
-		    					</p>
-								</div>
-	          	</div>
+	         <div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
+  <h3 class="billing-heading mb-4">Cart Total</h3>
+
+  <p class="d-flex">
+    <span>Subtotal</span>
+    <span><?= $grandTotal ?> DHS</span>
+  </p>
+
+  <p class="d-flex">
+    <span>Delivery</span>
+    <span>0 DHS</span>
+  </p>
+
+  <hr>
+
+  <p class="d-flex total-price">
+    <span>Total</span>
+    <span><?= $grandTotal ?> DHS</span>
+  </p>
+</div>
+</div>
 	          	<div class="col-md-6">
 	          		<div class="cart-detail ftco-bg-dark p-3 p-md-4">
 	          			<h3 class="billing-heading mb-4">Payment Method</h3>
