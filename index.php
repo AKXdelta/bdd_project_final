@@ -60,7 +60,7 @@
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+      <div class="slider-item" style="background-image: url(images/rest4.avif);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -68,7 +68,6 @@
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading">Welcome</span>
               <h1 class="mb-4">The Best Restaurant Testing Experience</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
 
@@ -76,7 +75,7 @@
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url(images/bg_2.jpg);">
+      <div class="slider-item" style="background-image: url(images/restau4.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -84,7 +83,6 @@
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading">Welcome</span>
               <h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
 
@@ -92,15 +90,14 @@
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
+      <div class="slider-item" style="background-image: url(images/rest4.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading">Welcome</span>
-              <h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <h1 class="mb-4"> Hot and Ready to Serve</h1>
               <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
 
@@ -117,70 +114,78 @@
 	    				<div class="col-md-4 d-flex ftco-animate">
 	    					<div class="icon"><span class="icon-phone"></span></div>
 	    					<div class="text">
-	    						<h3>000 (123) 456 7890</h3>
-	    						<p>A small river named Duden flows by their place and supplies.</p>
+	    						<h3>+212 8255555</h3>
 	    					</div>
 	    				</div>
 	    				<div class="col-md-4 d-flex ftco-animate">
 	    					<div class="icon"><span class="icon-my_location"></span></div>
 	    					<div class="text">
-	    						<h3>198 West 21th Street</h3>
-	    						<p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
+	    						<h3>Bd Béni Amir , BP 77 , Khouribga</h3>
 	    					</div>
 	    				</div>
 	    				<div class="col-md-4 d-flex ftco-animate">
 	    					<div class="icon"><span class="icon-clock-o"></span></div>
 	    					<div class="text">
 	    						<h3>Open Monday-Friday</h3>
-	    						<p>8:00am - 9:00pm</p>
+	    						<p>8:00am - 12:00pm</p>
 	    					</div>
 	    				</div>
 	    			</div>
 	    		</div>
 	    		<div class="book p-4">
-	    			<h3>Book a Table</h3>
-	    			<form action="#" class="appointment-form">
-	    				<div class="d-md-flex">
-		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="First Name">
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Last Name">
-		    				</div>
-	    				</div>
-	    				<div class="d-md-flex">
-		    				<div class="form-group">
-		    					<div class="input-wrap">
-		            		<div class="icon"><span class="ion-md-calendar"></span></div>
-		            		<input type="text" class="form-control appointment_date" placeholder="Date">
-	            		</div>
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<div class="input-wrap">
-		            		<div class="icon"><span class="ion-ios-clock"></span></div>
-		            		<input type="text" class="form-control appointment_time" placeholder="Time">
-	            		</div>
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Phone">
-		    				</div>
-	    				</div>
-	    				<div class="d-md-flex">
-	    					<div class="form-group">
-		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-		            </div>
-		            <div class="form-group ml-md-4">
-		              <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
-		            </div>
-	    				</div>
-	    			</form>
-	    		</div>
+  <h3>Book a Table</h3>
+
+  <form action="book.php" method="POST" class="appointment-form">
+
+    <div class="d-md-flex">
+      <div class="form-group">
+        <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+      </div>
+    </div>
+
+    <div class="d-md-flex">
+      <div class="form-group">
+        <div class="input-wrap">
+          <div class="icon"><span class="ion-md-calendar"></span></div>
+          <input type="date" name="reservation_date" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <div class="input-wrap">
+          <div class="icon"><span class="ion-ios-clock"></span></div>
+          <input type="time" name="reservation_time" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <input type="text" name="phone" class="form-control" placeholder="Phone" required>
+      </div>
+    </div>
+
+    <div class="d-md-flex">
+      <div class="form-group">
+        <textarea name="message" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
+      </div>
+    </div>
+
+  </form>
+</div>
+
     		</div>
     	</div>
     </section>
 
     <section class="ftco-about d-md-flex">
-    	<div class="one-half img" style="background-image: url(images/about.jpg);"></div>
+    	<div class="one-half img" style="background-image: url(images/rest4.avif);"></div>
     	<div class="one-half ftco-animate">
     		<div class="overlap">
 	        <div class="heading-section ftco-animate ">
@@ -707,44 +712,54 @@
     			<div class="col-md-6 d-flex align-self-stretch">
     				<div id="map"></div>
     			</div>
-	    		<div class="col-md-6 appointment ftco-animate">
-	    			<h3 class="mb-3">Book a Table</h3>
-	    			<form action="register.php" class="appointment-form" method="post">
-	    				<div class="d-md-flex">
-		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="First Name" name="first_name">
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Last Name" name="last_name">
-		    				</div>
-	    				</div>
-	    				<div class="d-md-flex">
-		    				<div class="form-group">
-		    					<div class="input-wrap">
-		            		<div class="icon"><span class="ion-md-calendar"></span></div>
-		            		<input type="text" class="form-control appointment_date" placeholder="Date" name="date">
-	            		</div>
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<div class="input-wrap">
-		            		<div class="icon"><span class="ion-ios-clock"></span></div>
-		            		<input type="text" class="form-control appointment_time" placeholder="Time" name="time">
-	            		</div>
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Phone" name="phone">
-		    				</div>
-	    				</div>
-	    				<div class="d-md-flex">
-	    					<div class="form-group">
-		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message" name="message"></textarea>
-		            </div>
-		            <div class="form-group ml-md-4">
-		              <input type="submit" value="Appointment" class="btn btn-primary py-3 px-4">
-		            </div>
-	    				</div>
-	    			</form>
-	    		</div>    			
+	    		<div class="book p-4">
+  <h3>Book a Table</h3>
+
+  <form action="book.php" method="POST" class="appointment-form">
+
+    <div class="d-md-flex">
+      <div class="form-group">
+        <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+      </div>
+    </div>
+
+    <div class="d-md-flex">
+      <div class="form-group">
+        <div class="input-wrap">
+          <div class="icon"><span class="ion-md-calendar"></span></div>
+          <input type="date" name="reservation_date" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <div class="input-wrap">
+          <div class="icon"><span class="ion-ios-clock"></span></div>
+          <input type="time" name="reservation_time" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <input type="text" name="phone" class="form-control" placeholder="Phone" required>
+      </div>
+    </div>
+
+    <div class="d-md-flex">
+      <div class="form-group">
+        <textarea name="message" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+      </div>
+
+      <div class="form-group ml-md-4">
+        <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
+      </div>
+    </div>
+
+  </form>
+</div>
+
     		</div>
     	</div>
     </section>
