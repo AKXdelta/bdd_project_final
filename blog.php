@@ -102,22 +102,27 @@
         .blog-image {
             width: 100%;
             height: 250px;
-            background: linear-gradient(135deg, #4a3021, #6b4423);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            position: relative;
             overflow: hidden;
-        }
+            border-radius: 8px;
+            position: relative;
+}
 
-        .blog-image::after {
-            content: '';
-            position: absolute;
+        .blog-image img {
             width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(201, 165, 90, 0.1) 0%, transparent 70%);
-        }
+             height: 100%;
+             object-fit: cover; /* remplit le container sans déformer */
+             display: block;
+}
+        .blog-image::after {
+               content: '';
+                 position: absolute;
+                width: 100%;
+                 height: 100%;
+                 background: radial-gradient(circle, rgba(201, 165, 90, 0.1) 0%, transparent 70%);
+}
+
+
+      
 
         .blog-content {
             padding: 25px;
@@ -243,17 +248,13 @@
             color: #c9a55a;
         }
 
-        .modal-image {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(135deg, #4a3021, #6b4423);
-            border-radius: 8px;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 80px;
-        }
+        .modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 
         .modal-title {
             font-size: 36px;
@@ -329,7 +330,7 @@
                 date: "Janvier 15, 2026",
                 author: "Nouhaila",
                 comments: 8,
-                image:image: "images/cappuchino.jpg",
+                image: "images/cappuchino.jpg",
                 excerpt: "Découvrez les secrets pour créer un cappuccino parfait à la maison. La clé réside dans trois éléments essentiels...",
                 fullText: `
                     <p>Découvrez les secrets pour créer un cappuccino parfait à la maison. La clé réside dans trois éléments essentiels: un espresso bien extrait, du lait parfaitement texturé, et la bonne température.</p>
@@ -350,7 +351,7 @@
                 date: "Janvier 10, 2026",
                 author: "Ahmed",
                 comments: 12,
-                  image:image: "images/manu.jpg",
+                image: "images/manu.jpg",
                 excerpt: "Cette saison, nous vous présentons nos nouvelles créations: le Latte à la Fleur d'Oranger, le Cappuccino aux Amandes...",
                 fullText: `
                     <p>Cette saison, nous vous présentons nos nouvelles créations inspirées par les saveurs marocaines traditionnelles.</p>
@@ -370,7 +371,7 @@
                 date: "Janvier 5, 2026",
                 author: "Youssef",
                 comments: 15,
-                image:image: "images/La tasse et les graines.jpg",
+                image: "images/La tasse et les graines.jpg",
                 excerpt: "Découvrez le voyage fascinant de nos grains de café, depuis les plantations éthiopiennes jusqu'à votre tasse...",
                 fullText: `
                     <p>Le café que vous dégustez chez Daily Dose a parcouru un long chemin avant d'arriver dans votre tasse.</p>
@@ -392,7 +393,7 @@
                 date: "Janvier 17, 2026",
                 author: "Fatima",
                 comments: 23,
-                image:image: "images/lattee.jpg",
+                image: "images/lattee.jpg",
                 excerpt: "Rejoignez-nous samedi prochain pour un atelier pratique de Latte Art. Apprenez à créer des rosettes, cœurs et tulipes...",
                 fullText: `
                     <p>Vous avez toujours voulu apprendre à créer ces magnifiques dessins dans votre cappuccino? C'est votre chance!</p>
@@ -419,7 +420,7 @@
                 date: "Janvier 12, 2026",
                 author: "Dr. Karim",
                 comments: 18,
-                image:image: "images/sante.jpg",
+                image "images/sante.jpg",
                 excerpt: "Des études récentes montrent que le café, consommé avec modération, offre de nombreux avantages pour la santé...",
                 fullText: `
                     <p>Le café est bien plus qu'une simple boisson énergisante. Les recherches scientifiques révèlent de nombreux bienfaits pour la santé.</p>
@@ -441,6 +442,7 @@
                 date: "Janvier 8, 2026",
                 author: "Laila",
                 comments: 10,
+                image: "images/cappuchino.jpg",
                 excerpt: "Ce mois-ci, nous avons visité les coopératives de café au Brésil et en Colombie. Découvrez leur passion...",
                 fullText: `
                     <p>Notre voyage de sourcing nous a menés dans les montagnes du Brésil et de Colombie, où nous avons rencontré les familles qui cultivent votre café quotidien.</p>
