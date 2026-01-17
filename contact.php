@@ -109,7 +109,7 @@
                 </div>
                 <div class="col-md-6">
 	                <div class="form-group">
-	                  <input type="email"name ="email" class="form-control" placeholder="Your Email" required>
+	                  <input type="email" name ="email" class="form-control" placeholder="Your Email" required>
 	                </div>
 	                </div>
               </div>
@@ -117,7 +117,7 @@
                 <input type="text" name="subject" class="form-control" placeholder="Subject">
               </div>
               <div class="form-group">
-                <textarea name=" message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+                <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
