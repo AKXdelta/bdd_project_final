@@ -100,7 +100,7 @@
 
 <div class="slideshow">
     <img src="images/rest3.jpg" alt="Restaurant">
-    <img src="images/caf3.jfif" alt="Salle">
+    <img src="images/rest5.jpg" alt="Salle">
     <img src="images/rest4.avif" alt="Plat">
 </div>
 

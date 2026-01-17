@@ -1,3 +1,20 @@
+
+<?php
+session_start();
+$grandTotal = 0;
+
+if (!empty($_SESSION['cart'])) {
+  foreach ($_SESSION['cart'] as $item) {
+    $quantity = isset($item['quantity']) ? $item['quantity'] : 1;
+    $grandTotal += $item['price'] * $quantity;
+  }
+}
+
+$_SESSION['grandTotal'] = $grandTotal;
+?>
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -92,138 +109,348 @@
 						        <th>Total</th>
 						      </tr>
 						    </thead>
-						    <tbody>
-						      <tr class="text-center">
-						        <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
-						        
-						        <td class="image-prod"><div class="img" style="background-image:url(images/menu-2.jpg);"></div></td>
-						        
-						        <td class="product-name">
-						        	<h3>Creamy Latte Coffee</h3>
-						        	<p>Far far away, behind the word mountains, far from the countries</p>
-						        </td>
-						        
-						        <td class="price">$4.90</td>
-						        
-						        <td class="quantity">
-						        	<div class="input-group mb-3">
-					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-					          	</div>
-					          </td>
-						        
-						        <td class="total">$4.90</td>
-						      </tr><!-- END TR-->
+						    
+								<tbody>
+<?php if (!empty($_SESSION['cart'])): ?>
+  <?php $grandTotal = 0; ?>
+  <?php foreach ($_SESSION['cart'] as $index => $item): ?>
+    <?php 
+      $quantity = isset($item['quantity']) ? $item['quantity'] : 1;
+      $total = $item['price'] * $quantity;
+      $grandTotal += $total;
+    ?>
+    <tr class="text-center">
+      <td class="product-remove">
+        <a href="remove_from_cart.php?index=<?= $index ?>">
+          <span class="icon-close"></span>
+        </a>
+      </td>
 
-						      <tr class="text-center">
-						        <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
-						        
-						        <td class="image-prod"><div class="img" style="background-image:url(images/dish-2.jpg);"></div></td>
-						        
-						        <td class="product-name">
-						        	<h3>Grilled Ribs Beef</h3>
-						        	<p>Far far away, behind the word mountains, far from the countries</p>
-						        </td>
-						        
-						        <td class="price">$15.70</td>
-						        
-						        <td class="quantity">
-						        	<div class="input-group mb-3">
-					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-					          	</div>
-					          </td>
-						        
-						        <td class="total">$15.70</td>
-						      </tr><!-- END TR-->
-						    </tbody>
-						  </table>
+      <td class="image-prod">
+        <div class="img" style="background-image:url(<?= $item['image'] ?>);"></div>
+      </td>
+
+      <td class="product-name">
+        <h3><?= htmlspecialchars($item['name']) ?></h3>
+      </td>
+
+      <td class="price"><?= $item['price'] ?> DHS</td>
+
+      <td class="quantity">
+      <?= $quantity ?>
+      </td>
+
+
+      <td class="total"><?= $total ?> DHS</td>
+    </tr>
+  <?php endforeach; ?>
+<?php else: ?>
+  <tr>
+    <td colspan="6" class="text-center">Votre panier est vide</td>
+  </tr>
+<?php endif; ?>
+</tbody>
+                    </table>
+						  <div class="row mt-4">
+                          <div class="col-md-6">
+                          <a href="menu.php" class="btn btn-primary py-3 px-4">
+                             ← Retour au menu
+                          </a>
+                          </div>
+                         </div>
 					  </div>
     			</div>
     		</div>
-    		<div class="row justify-content-end">
-    			<div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
-    				<div class="cart-total mb-3">
-    					<h3>Cart Totals</h3>
-    					<p class="d-flex">
-    						<span>Subtotal</span>
-    						<span>$20.60</span>
-    					</p>
-    					<p class="d-flex">
-    						<span>Delivery</span>
-    						<span>$0.00</span>
-    					</p>
-    					<p class="d-flex">
-    						<span>Discount</span>
-    						<span>$3.00</span>
-    					</p>
-    					<hr>
-    					<p class="d-flex total-price">
-    						<span>Total</span>
-    						<span>$17.60</span>
-    					</p>
-    				</div>
-    				<p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
-    			</div>
+    		       <div class="cart-total mb-3">
+                    <h3>Cart Totals</h3>
+
+                          <p class="d-flex">
+                         <span>Subtotal</span>
+                      <span><?= $grandTotal ?> DHS</span>
+                    </p>
+
+                  <p class="d-flex">
+                 <span>Delivery</span>
+              <span>0 DHS</span>
+                   </p>
+
+                   <hr>
+
+                  <p class="d-flex total-price">
+                     <span>Total</span>
+                   <span><?= $grandTotal ?> DHS</span>
+                     </p>
+                      </div>
+
+    				<a href="checkout.php" class="btn btn-primary py-3 px-4">
+                     Checkout
+                    </a>
+				</div>
     		</div>
 			</div>
 		</section>
 
-    <section class="ftco-section">
+   <section class="ftco-menu mb-5 pb-5">
     	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-          	<span class="subheading">Discover</span>
-            <h2 class="mb-4">Related products</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Découvrez</span>
+            <h2 class="mb-4">Nos Meilleurs Produits</h2>
+            
           </div>
         </div>
-        <div class="row">
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-1.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-2.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-3.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-4.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        </div>
+    		<div class="row d-md-flex">
+	    		<div class="col-lg-12 ftco-animate p-md-5">
+		    		<div class="row">
+		          <div class="col-md-12 nav-link-wrap mb-5">
+		            <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Nos Plats</a>
+
+		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Nos boissons</a>
+
+		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Nos Desserts</a>
+		            </div>
+		          </div>
+		          <div class="col-md-12 d-flex align-items-center">
+		            
+		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
+
+		              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+		              	<div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/thon.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Thon rouge de Méditerranée mi-cuit</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                             <input type="hidden" name="name" value="Thon rouge de Méditerranée mi-cuit">
+                                             <input type="hidden" name="price" value="270.00">
+                                             <input type="hidden" name="image" value="images/thon.webp">
+
+                                             <button type="submit" class="btn btn-primary btn-outline-primary">
+                                              Add to cart
+                                              </button>
+                                           </form>
+
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/cote.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Côte de veau rôtie au sautoir</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Côte de veau rôtie au sautoir">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/cote.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/saumon.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Saumon grillé</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Saumon grillé">
+                                        <input type="hidden" name="price" value="260.0">
+                                        <input type="hidden" name="image" value="images/saumon.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/canard.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Magret de canard rôti aux épices</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Magret de canard rôti aux épices">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/canard.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/rissoto.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Risotto à la truffe noire</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Risotto à la truffe noire">
+                                        <input type="hidden" name="price" value="270.00">
+                                        <input type="hidden" name="image" value="images/rissoto.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		
+		              		
+		              	</div>
+		              </div>
+
+		              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/orange.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Jus d'orange</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus d'orange">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/orange.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/citron.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Jus de citron</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus de citron">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/citron.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/coco.avif);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Lait de coco</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Lait de coco">
+                                        <input type="hidden" name="price" value="60.0">
+                                        <input type="hidden" name="image" value="images/coco.avif">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+					  <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/framb2.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Cheesecake framboise</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Cheesecake framboise">
+                                        <input type="hidden" name="price" value="100.0">
+                                        <input type="hidden" name="image" value="images/framb2.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/fondant.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Fondant au chocolat</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fondant au chocolat">
+                                        <input type="hidden" name="price" value="90.0">
+                                        <input type="hidden" name="image" value="images/fondant.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pavlova.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Pavlova fruits rouges</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Pavlova fruits rouges">
+                                        <input type="hidden" name="price" value="170.0">
+                                        <input type="hidden" name="image" value="images/Pavlova.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pommes.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Fine tarte aux pommes</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fine tarte aux pommes">
+                                        <input type="hidden" name="price" value="95.0">
+                                        <input type="hidden" name="image" value="images/Pommes.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
     	</div>
     </section>
+
+
 
     <footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>

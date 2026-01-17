@@ -170,6 +170,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Salade César au poulet croustillant, tomate cerise confite, salade Romaine et croûtons</p>
+							 <form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Salade César Au Poulet">
+                              <input type="hidden" name="price" value="90.00">
+                              <input type="hidden" name="image" value="images/OIP.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
         			</div>
         		</div>
@@ -182,6 +191,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Tomate, oignon rouge, concombre, poivrons, olive Kalamata, fromage feta</p>
+							 <form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Salade Grecque">
+                              <input type="hidden" name="price" value="80.00">
+                              <input type="hidden" name="image" value="images/R.jfif">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -194,6 +212,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Salade de fromage de chèvre gratiné au fine herbes, pommes caramélisées, betterave mariné et mesclun de salade, vinaigrette de balsamique et miel</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Salade de fromage de chèvre">
+                              <input type="hidden" name="price" value="95.00">
+                              <input type="hidden" name="image" value="images/salade-chevres.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -206,6 +233,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Tartare de mangue et gambas cuites, concombre, tomate et herbes, lit de carpaccio d’avocat et salade roquette, tuile de pain croustillante</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Tartare de mangue et gambas cuites">
+                              <input type="hidden" name="price" value="110.00">
+                              <input type="hidden" name="image" value="images/OIF.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -218,6 +254,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Tomate cerise, burratta ,Ananas rôtis au romarin, salade roquette, vinaigrette Balsamique</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Salade de burratta">
+                              <input type="hidden" name="price" value="120.00">
+                              <input type="hidden" name="image" value="images/grilled-peach-and-burrata-salad-683x1024.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -230,6 +275,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Soupe de poissons des rochers et croûtons à la persillade</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Soupe de poissons">
+                              <input type="hidden" name="price" value="85.00">
+                              <input type="hidden" name="image" value="images/poisson.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -242,6 +296,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Gambas Pil-Pil au jus de crustacés</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Gambas Pil-Pil">
+                              <input type="hidden" name="price" value="120.00">
+                              <input type="hidden" name="image" value="images/gambas.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        		</div>
         		</div>
 			</div>
@@ -254,6 +317,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Nems aux gambas à la chermoula, légumes croquants et champignons frais</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Nems aux gambas">
+                              <input type="hidden" name="price" value="90.00">
+                              <input type="hidden" name="image" value="images/nems.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -272,6 +344,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Thon rouge poêlé</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Thon rouge de Méditerranée mi-cuit">
+                              <input type="hidden" name="price" value="270.00">
+                              <input type="hidden" name="image" value="images/thon.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -284,6 +365,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Grillé au garam-massala, fondue de tomate et poivron vert aux parfums d’un rougail, jus d’herbes fraiches</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Saumon grillé">
+                              <input type="hidden" name="price" value="260.00">
+                              <input type="hidden" name="image" value="images/saumon.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -296,6 +386,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        			   <p>Ail confit, sauce aux anchois et herbes fraîches, garniture aux choix</p>
+						   <form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Côte de veau rôtie au sautoir (350g)">
+                              <input type="hidden" name="price" value="300.00">
+                              <input type="hidden" name="image" value="images/cote.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -308,6 +407,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        		       <p> Pâtes aux légumes de saison</p>
+						   <form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="TAGLIATELLE PRIMAVERA">
+                              <input type="hidden" name="price" value="1800.00">
+                              <input type="hidden" name="image" value="images/tag.légumes.jpeg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -320,6 +428,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Légumes grillés, fruits confits de saison, sauce gingembre.</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Magret de canard rôti aux épices">
+                              <input type="hidden" name="price" value="260.00">
+                              <input type="hidden" name="image" value="images/canard.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -332,6 +449,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Oignons confits, ail, câpres.</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Tagliatelle au saumon fumé">
+                              <input type="hidden" name="price" value="205.00">
+                              <input type="hidden" name="image" value="images/tag.ausaumon.png">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -344,6 +470,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Rocher de parmesan  </p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Risotto à la truffe noire">
+                              <input type="hidden" name="price" value="270.00">
+                              <input type="hidden" name="image" value="images/rissoto.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -356,6 +491,16 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Pates noires,fruits de mer au choix</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Pâtes noires aux fruits de mer">
+                              <input type="hidden" name="price" value="230.00">
+                              <input type="hidden" name="image" value="images/noires.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
+							
 	        			</div>
 	        		</div>
         		</div>
@@ -368,6 +513,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p> Bun moelleux, vieux cheddar, pastrami grillé, frites, sauce cheddar.</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Cheeseburger pur boeuf">
+                              <input type="hidden" name="price" value="170.00">
+                              <input type="hidden" name="image" value="images/beef.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -380,6 +534,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Stracciatella, parmesan, roquette</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Pizaa STRACCIATELLA">
+                              <input type="hidden" name="price" value="160.00">
+                              <input type="hidden" name="image" value="images/stracciatella.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -392,6 +555,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Pâtes aux palourdes frais </p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Pâtes aux palourdes">
+                              <input type="hidden" name="price" value="150.00">
+                              <input type="hidden" name="image" value="images/palourdes.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -404,6 +576,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Bufala, parmesan, roquette, champignons, tomate séché, pesto</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Pizza BUFALA">
+                              <input type="hidden" name="price" value="150.00">
+                              <input type="hidden" name="image" value="images/bufala.avif">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -421,6 +602,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Cheesecake framboise et crumble pralines rosess</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Cheesecake framboise">
+                              <input type="hidden" name="price" value="100.00">
+                              <input type="hidden" name="image" value="images/framb2.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
         			</div>
         		</div>
@@ -433,6 +623,15 @@
                          </div>    
 	        			<div class="d-block">
 	        				<p>Supreme d’orange caramélisé, Glace vanille</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Pain perdu flambé Grand marnier">
+                              <input type="hidden" name="price" value="120.00">
+                              <input type="hidden" name="image" value="images/pain.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -444,7 +643,16 @@
 	        				<span class="price">95.00DHS</span>
 	        			</div>
 	        			<div class="d-block">
-	        				<p>A small river named Duden flows by their place and supplies</p>
+	        				<p>Pommes</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Fine tarte aux pommes">
+                              <input type="hidden" name="price" value="95.00">
+                              <input type="hidden" name="image" value="images/Pommes.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -457,6 +665,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Fondant </p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Fondant au chocolat">
+                              <input type="hidden" name="price" value="90.00">
+                              <input type="hidden" name="image" value="images/fondant.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -470,6 +687,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Crème légère à la vanille, confît de fruits rouges, fruits rouges.</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Pavlova fruits rouges">
+                              <input type="hidden" name="price" value="170.00">
+                              <input type="hidden" name="image" value="images/Pavlova.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -482,6 +708,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Au choix</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Boules de Glace">
+                              <input type="hidden" name="price" value="80.00">
+                              <input type="hidden" name="image" value="images/glace.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -498,6 +733,15 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Oranges pressés</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Jus d'orange">
+                              <input type="hidden" name="price" value="50.00">
+                              <input type="hidden" name="image" value="images/orange.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
 	        		</div>
         		</div>
@@ -510,7 +754,17 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Citrons pressés</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Jus de citron">
+                              <input type="hidden" name="price" value="50.00">
+                              <input type="hidden" name="image" value="images/citron.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
 	        			</div>
+	                     </div>
 	        		</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
@@ -522,6 +776,16 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Coco</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Lait de coco">
+                              <input type="hidden" name="price" value="60.00">
+                              <input type="hidden" name="image" value="images/coco.avif">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
+	        			</div>
 	        			</div>
 	        		</div>
         		</div>
@@ -534,6 +798,16 @@
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Thé ,citron</p>
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Thé au citron glacé">
+                              <input type="hidden" name="price" value="60.00">
+                              <input type="hidden" name="image" value="images/the.jpg">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
+	        			</div>
 	        			</div>
 	        		</div>
         		</div>
@@ -575,7 +849,16 @@
 		              				<div class="text">
 		              					<h3><a href="#">Thon rouge de Méditerranée mi-cuit</a></h3>
 		              					
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                             <input type="hidden" name="name" value="Thon rouge de Méditerranée mi-cuit">
+                                             <input type="hidden" name="price" value="270.00">
+                                             <input type="hidden" name="image" value="images/thon.webp">
+
+                                             <button type="submit" class="btn btn-primary btn-outline-primary">
+                                              Add to cart
+                                              </button>
+                                           </form>
+
 		              				</div>
 		              			</div>
 		              		</div>
@@ -585,7 +868,16 @@
 		              				<div class="text">
 		              					<h3><a href="#">Côte de veau rôtie au sautoir</a></h3>
 		              					
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Côte de veau rôtie au sautoir">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/cote.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+
 		              				</div>
 		              			</div>
 		              		</div>
@@ -595,7 +887,15 @@
 		              				<div class="text">
 		              					<h3><a href="#">Saumon grillé</a></h3>
 		              					
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Saumon grillé">
+                                        <input type="hidden" name="price" value="260.0">
+                                        <input type="hidden" name="image" value="images/saumon.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -605,7 +905,15 @@
 		              				<div class="text">
 		              					<h3><a href="#">Magret de canard rôti aux épices</a></h3>
 		              					
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Magret de canard rôti aux épices">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/canard.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -615,7 +923,15 @@
 		              				<div class="text">
 		              					<h3><a href="#">Risotto à la truffe noire</a></h3>
 		              					
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Risotto à la truffe noire">
+                                        <input type="hidden" name="price" value="270.00">
+                                        <input type="hidden" name="image" value="images/rissoto.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -632,7 +948,15 @@
 		              				<div class="text">
 		              					<h3><a href="#">Jus d'orange</a></h3>
 		              					
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus d'orange">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/orange.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -641,7 +965,15 @@
 		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/citron.jpg);"></a>
 		              				<div class="text">
 		              					<h3><a href="#">Jus de citron</a></h3>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus de citron">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/citron.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -650,7 +982,15 @@
 		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/coco.avif);"></a>
 		              				<div class="text">
 		              					<h3><a href="#">Lait de coco</a></h3>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Lait de coco">
+                                        <input type="hidden" name="price" value="60.0">
+                                        <input type="hidden" name="image" value="images/coco.avif">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -664,7 +1004,15 @@
 		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/framb2.jpg);"></a>
 		              				<div class="text">
 		              					<h3><a href="#">Cheesecake framboise</a></h3>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Cheesecake framboise">
+                                        <input type="hidden" name="price" value="100.0">
+                                        <input type="hidden" name="image" value="images/framb2.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -673,7 +1021,15 @@
 		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/fondant.webp);"></a>
 		              				<div class="text">
 		              					<h3><a href="#">Fondant au chocolat</a></h3>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fondant au chocolat">
+                                        <input type="hidden" name="price" value="90.0">
+                                        <input type="hidden" name="image" value="images/fondant.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -682,7 +1038,15 @@
 		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pavlova.webp);"></a>
 		              				<div class="text">
 		              					<h3><a href="#">Pavlova fruits rouges</a></h3>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Pavlova fruits rouges">
+                                        <input type="hidden" name="price" value="170.0">
+                                        <input type="hidden" name="image" value="images/Pavlova.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
@@ -691,7 +1055,15 @@
 		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pommes.jpg);"></a>
 		              				<div class="text">
 		              					<h3><a href="#">Fine tarte aux pommes</a></h3>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fine tarte aux pommes">
+                                        <input type="hidden" name="price" value="95.0">
+                                        <input type="hidden" name="image" value="images/Pommes.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
 		              				</div>
 		              			</div>
 		              		</div>
