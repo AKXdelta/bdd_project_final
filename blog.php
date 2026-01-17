@@ -77,11 +77,7 @@
     </section>
 
     <style>
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
+        
 
         .blog-grid {
             display: grid;
@@ -331,8 +327,9 @@
                 id: 1,
                 title: "L'Art du Cappuccino Parfait",
                 date: "Janvier 15, 2026",
-                author: "Sarah",
+                author: "Nouhaila",
                 comments: 8,
+                image:image: "images/cappuchino.jpg",
                 excerpt: "Découvrez les secrets pour créer un cappuccino parfait à la maison. La clé réside dans trois éléments essentiels...",
                 fullText: `
                     <p>Découvrez les secrets pour créer un cappuccino parfait à la maison. La clé réside dans trois éléments essentiels: un espresso bien extrait, du lait parfaitement texturé, et la bonne température.</p>
@@ -353,6 +350,7 @@
                 date: "Janvier 10, 2026",
                 author: "Ahmed",
                 comments: 12,
+                  image:image: "images/manu.jpg",
                 excerpt: "Cette saison, nous vous présentons nos nouvelles créations: le Latte à la Fleur d'Oranger, le Cappuccino aux Amandes...",
                 fullText: `
                     <p>Cette saison, nous vous présentons nos nouvelles créations inspirées par les saveurs marocaines traditionnelles.</p>
@@ -372,6 +370,7 @@
                 date: "Janvier 5, 2026",
                 author: "Youssef",
                 comments: 15,
+                image:image: "images/La tasse et les graines.jpg",
                 excerpt: "Découvrez le voyage fascinant de nos grains de café, depuis les plantations éthiopiennes jusqu'à votre tasse...",
                 fullText: `
                     <p>Le café que vous dégustez chez Daily Dose a parcouru un long chemin avant d'arriver dans votre tasse.</p>
@@ -393,6 +392,7 @@
                 date: "Janvier 17, 2026",
                 author: "Fatima",
                 comments: 23,
+                image:image: "images/lattee.jpg",
                 excerpt: "Rejoignez-nous samedi prochain pour un atelier pratique de Latte Art. Apprenez à créer des rosettes, cœurs et tulipes...",
                 fullText: `
                     <p>Vous avez toujours voulu apprendre à créer ces magnifiques dessins dans votre cappuccino? C'est votre chance!</p>
@@ -410,7 +410,7 @@
                     <p><strong>Prix:</strong> 450 DH par personne</p>
                     <p><strong>Places limitées:</strong> Maximum 10 participants pour garantir une attention personnalisée.</p>
                     
-                    <p>Réservez votre place dès maintenant en appelant le 06 XX XX XX XX ou en passant au café!</p>
+                    <p>Réservez votre place dès maintenant en appelant le 08255555 ou en passant au café!</p>
                 `
             },
             {
@@ -419,6 +419,7 @@
                 date: "Janvier 12, 2026",
                 author: "Dr. Karim",
                 comments: 18,
+                image:image: "images/sante.jpg",
                 excerpt: "Des études récentes montrent que le café, consommé avec modération, offre de nombreux avantages pour la santé...",
                 fullText: `
                     <p>Le café est bien plus qu'une simple boisson énergisante. Les recherches scientifiques révèlent de nombreux bienfaits pour la santé.</p>
@@ -465,7 +466,9 @@
             articles.forEach(article => {
                 const card = `
                     <div class="blog-card" onclick="openModal(${article.id})">
-                        <div class="blog-image">☕</div>
+                      <div class="blog-image">
+                         <img src="${article.image}" alt="${article.title}" />
+                      </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <span>📅 ${article.date}</span>
