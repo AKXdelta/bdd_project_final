@@ -81,79 +81,56 @@ $grandTotal = isset($_SESSION['grandTotal']) ? $_SESSION['grandTotal'] : 0;
         </div>
       </div>
     </section>
+<h3>Billing Details</h3>
 
-    <section class="ftco-section">
+ <section class="ftco-section">
       <div class="container">
         <div class="row">
           <div class="col-xl-8 ftco-animate">
-						<form action="#" class="billing-form ftco-bg-dark p-3 p-md-5">
-							<h3 class="mb-4 billing-heading">Billing Details</h3>
+					    <form action="billing.php" method="POST" class="billing-form ftco-bg-dark p-3 p-md-5">
+               <h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
 	          		<div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="firstname">Firt Name</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                  <input type="text" name="first_name" class="form-control" placeholder="">
 	                </div>
 	              </div>
 	              <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="lastname">Last Name</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                 <input type="text" name="last_name" class="form-control" placeholder="">
 	                </div>
                 </div>
                 <div class="w-100"></div>
 		            <div class="col-md-12">
 		            	<div class="form-group">
-		            		<label for="country">State / Country</label>
-		            		<div class="select-wrap">
-		                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                  <select name="" id="" class="form-control">
-		                  	<option value="">France</option>
-		                    <option value="">Italy</option>
-		                    <option value="">Philippines</option>
-		                    <option value="">South Korea</option>
-		                    <option value="">Hongkong</option>
-		                    <option value="">Japan</option>
-		                  </select>
-		                </div>
-		            	</div>
+		            		<label for="country">Areas</label>
+                     <input type="text" name="area" class="form-control" placeholder="">
 		            </div>
 		            <div class="w-100"></div>
 		            <div class="col-md-6">
 		            	<div class="form-group">
 	                	<label for="streetaddress">Street Address</label>
-	                  <input type="text" class="form-control" placeholder="House number and street name">
+	                  <input type="text" name="street_address" class="form-control" placeholder="House number and street name">
 	                </div>
 		            </div>
 		            <div class="col-md-6">
 		            	<div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
-	                </div>
-		            </div>
-		            <div class="w-100"></div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-	                	<label for="towncity">Town / City</label>
-	                  <input type="text" class="form-control" placeholder="">
-	                </div>
-		            </div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-		            		<label for="postcodezip">Postcode / ZIP *</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                  <input type="text" name="apartment" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
 	                </div>
 		            </div>
 		            <div class="w-100"></div>
 		            <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="phone">Phone</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                  <input type="text" name="phone" class="form-control" placeholder="">
 	                </div>
 	              </div>
 	              <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="emailaddress">Email Address</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                  <input type="text" name="email" class="form-control" placeholder="">
 	                </div>
                 </div>
                 <div class="w-100"></div>
@@ -166,10 +143,7 @@ $grandTotal = isset($_SESSION['grandTotal']) ? $_SESSION['grandTotal'] : 0;
 									</div>
                 </div>
 	            </div>
-	          </form><!-- END -->
-
-
-
+	          </form>
 	         <div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
   <h3 class="billing-heading mb-4">Cart Total</h3>
 
@@ -222,8 +196,8 @@ $grandTotal = isset($_SESSION['grandTotal']) ? $_SESSION['grandTotal'] : 0;
 											</div>
 										</div>
 									</div>
-									<p><a href="#"class="btn btn-primary py-3 px-4">Place an order</a></p>
-								</div>
+									<p><button type="submit" class="btn btn-primary py-3 px-4">Place an order</button></p>
+                </div>
 	          	</div>
 	          </div>
           </div> <!-- .col-md-8 -->
