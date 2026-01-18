@@ -67,7 +67,7 @@
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading">Welcome</span>
-              <h1 class="mb-4">The Best Coffee Testing Experience</h1>
+              <h1 class="mb-4">The Best Restaurant Testing Experience</h1>
               <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
@@ -336,7 +336,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>30 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
@@ -347,7 +347,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>40 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
@@ -358,7 +358,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>30 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
@@ -369,7 +369,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>30 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
@@ -446,7 +446,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>30 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -457,7 +457,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>30 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -468,7 +468,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Grilled Beef</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>40 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -484,7 +484,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Lemonade Juice</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>60 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -495,7 +495,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Pineapple Juice</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>80 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -506,7 +506,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Soda Drinks</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>60 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -522,7 +522,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Hot Cake Honey</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>40 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -533,7 +533,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Hot Cake Honey</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>70 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -544,7 +544,7 @@
 		              				<div class="text">
 		              					<h3><a href="#">Hot Cake Honey</a></h3>
 		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
+		              					<p class="price"><span>60 DH</span></p>
 		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
 		              				</div>
 		              			</div>
@@ -633,7 +633,7 @@
 	              <div class="image mr-3 align-self-center">
 	                <img src="images/person_3.jpg" alt="">
 	              </div>
-	              <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
+	              <div class="name align-self-center">salma wahdi<span class="position">Illustrator Designer</span></div>
 	            </div>
 	          </div>
 	        </div>
@@ -814,9 +814,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            
           </div>
         </div>
       </div>
