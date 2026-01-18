@@ -69,8 +69,9 @@
         .blog-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
+            gap: 35px;
+            margin-top: 150px;
+            padding-top: 20px;
         }
 
         .blog-card {
@@ -352,6 +353,89 @@
             <div class="modal-text" id="modalText"></div>
         </div>
     </div>
+  <div class="container">
+    <div class="blog-header">
+            <h1>Notre Blog</h1>
+            <button class="create-blog-btn" onclick="openCreateModal()">
+                ➕ Créer un Article
+            </button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+            <!-- Les articles seront générés par JavaScript -->
+        </div>
+
+       
+    </div>
+
+    <!-- Modal pour afficher l'article complet -->
+    <div class="modal" id="articleModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('articleModal')">&times;</span>
+            <div class="modal-image" id="modalImage"></div>
+            <h1 class="modal-title" id="modalTitle"></h1>
+            <div class="modal-meta" id="modalMeta"></div>
+            <div class="modal-text" id="modalText"></div>
+
+            <!-- Section Commentaires -->
+            <div class="comments-section">
+                <h2 class="comments-title">💬 Commentaires (<span id="commentCount">0</span>)</h2>
+                
+                <div class="comment-form">
+                    <input type="text" id="commentName" placeholder="Votre nom" required>
+                    <textarea id="commentText" placeholder="Votre commentaire..." required></textarea>
+                    <button onclick="addComment()">Publier le commentaire</button>
+                </div>
+
+                <div class="comments-list" id="commentsList">
+                    <!-- Les commentaires seront ajoutés ici -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour créer un article -->
+    <div class="modal" id="createArticleModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('createArticleModal')">&times;</span>
+            <h1 class="modal-title">✍️ Créer un Nouvel Article</h1>
+            
+            <form class="create-article-form" onsubmit="submitArticle(event)">
+                <div class="form-group">
+                    <label>Titre de l'article *</label>
+                    <input type="text" id="newTitle" required placeholder="Ex: Les Secrets du Café Parfait">
+                </div>
+
+                <div class="form-group">
+                    <label>Auteur *</label>
+                    <input type="text" id="newAuthor" required placeholder="Votre nom">
+                </div>
+
+                <div class="form-group">
+                    <label>Extrait (court résumé) *</label>
+                    <textarea id="newExcerpt" required placeholder="Un bref résumé de votre article..." rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Contenu complet *</label>
+                    <textarea id="newContent" required placeholder="Le contenu complet de votre article..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                    <div class="image-preview" id="imagePreview" onclick="document.getElementById('imageUpload').click()">
+                        <div class="image-preview-placeholder">
+                            <div style="font-size: 40px;">📷</div>
+                            <div>Cliquez pour ajouter une image</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-article-btn">📝 Publier l'Article</button>
+            </form>
+        </div>
+    </div>
 
     <script>
         // Base de données des articles
@@ -557,6 +641,21 @@
 
         // Initialiser l'affichage
         displayArticles();
+         
     </script>
+   
+ <div class="comments-section">
+                <h2 class="comments-title">💬 Commentaires (<span id="commentCount">0</span>)</h2>
+                
+                <div class="comment-form">
+                    <input type="text" id="commentName" placeholder="Votre nom" required>
+                    <textarea id="commentText" placeholder="Votre commentaire..." required></textarea>
+                    <button onclick="addComment()">Publier le commentaire</button>
+                </div>
+
+                <div class="comments-list" id="commentsList">
+                    <!-- Les commentaires seront ajoutés ici -->
+                </div>
+            </div>
 </body>
 </html>
