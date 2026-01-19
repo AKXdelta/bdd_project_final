@@ -109,79 +109,6 @@ $_SESSION['grandTotal'] = $grandTotal;
 						        <th>Total</th>
 						      </tr>
 						    </thead>
-<<<<<<< HEAD
-						    <tbody>
-						      <tr class="text-center">
-						        <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
-						        
-						        <td class="image-prod"><div class="img" style="background-image:url(images/menu-2.jpg);"></div></td>
-						        
-						        <td class="product-name">
-						        	<h3>Creamy Latte Coffee</h3>
-						        	<p>Far far away, behind the word mountains, far from the countries</p>
-						        </td>
-						        
-						        <td class="price">40 DH</td>
-						        
-						        <td class="quantity">
-						        	<div class="input-group mb-3">
-					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-					          	</div>
-					          </td>
-						        
-						        <td class="total">40 DH</td>
-						      </tr><!-- END TR-->
-
-						      <tr class="text-center">
-						        <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
-						        
-						        <td class="image-prod"><div class="img" style="background-image:url(images/dish-2.jpg);"></div></td>
-						        
-						        <td class="product-name">
-						        	<h3>Grilled Ribs Beef</h3>
-						        	<p>Far far away, behind the word mountains, far from the countries</p>
-						        </td>
-						        
-						        <td class="price">150 DH</td>
-						        
-						        <td class="quantity">
-						        	<div class="input-group mb-3">
-					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-					          	</div>
-					          </td>
-						        
-						        <td class="total">70 DH</td>
-						      </tr><!-- END TR-->
-						    </tbody>
-						  </table>
-					  </div>
-    			</div>
-    		</div>
-    		<div class="row justify-content-end">
-    			<div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
-    				<div class="cart-total mb-3">
-    					<h3>Cart Totals</h3>
-    					<p class="d-flex">
-    						<span>Subtotal</span>
-    						<span>60 DH</span>
-    					</p>
-    					<p class="d-flex">
-    						<span>Delivery</span>
-    						<span>30 DH</span>
-    					</p>
-    					<p class="d-flex">
-    						<span>Discount</span>
-    						<span>40 DH</span>
-    					</p>
-    					<hr>
-    					<p class="d-flex total-price">
-    						<span>Total</span>
-    						<span>170 DH</span>
-    					</p>
-    				</div>
-    				<p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
-    			</div>
-=======
 						    
 								<tbody>
 <?php if (!empty($_SESSION['cart'])): ?>
@@ -259,7 +186,6 @@ $_SESSION['grandTotal'] = $grandTotal;
                      Checkout
                     </a>
 				</div>
->>>>>>> 1665e9a8eacd9461edc1374f18fcb604f5568483
     		</div>
 			</div>
 		</section>
@@ -273,54 +199,6 @@ $_SESSION['grandTotal'] = $grandTotal;
             
           </div>
         </div>
-<<<<<<< HEAD
-        <div class="row">
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-1.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>200 DH</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-2.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>40 DH</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-3.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>60 DH</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(images/menu-4.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>50 DH</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        </div>
-=======
     		<div class="row d-md-flex">
 	    		<div class="col-lg-12 ftco-animate p-md-5">
 		    		<div class="row">
@@ -569,7 +447,6 @@ $_SESSION['grandTotal'] = $grandTotal;
 		        </div>
 		      </div>
 		    </div>
->>>>>>> 1665e9a8eacd9461edc1374f18fcb604f5568483
     	</div>
     </section>
 
