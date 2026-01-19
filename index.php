@@ -193,7 +193,8 @@
 	          <h2 class="mb-4">Our Story</h2>
 	        </div>
 	        <div>
-	  				<p>From the moment guests arrive, a world of flavors unfolds. The warm atmosphere, refined décor, and inviting aromas create an experience that goes beyond dining. Each dish is prepared with care, combining fresh ingredients, culinary tradition, and creative inspiration. Guided by passion and expertise, the kitchen offers a journey of taste where every plate tells a story. More than a restaurant, it is a place to enjoy, share, and create unforgettable moments.</p>
+	  				<p> flavor, and good energy. Born from a love for the little details, we believe that a well-crafted coffee, carefully prepared dishes, and a warm atmosphere can turn any day into something special.
+Every visit is a new experience, because every moment deserves its own Daily Dose of happiness.</p>
 	  			</div>
   			</div>
     	</div>

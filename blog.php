@@ -1,7 +1,58 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "db_articles");
+if ($conn->connect_error) {
+    die("Erreur connexion DB");
+}
+
+// HANDLE ARTICLE UNE SEULE FOIS
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_article'])) {
+    $title = $conn->real_escape_string($_POST['title']);
+    $excerpt = $conn->real_escape_string($_POST['excerpt']);
+    $fText = $conn->real_escape_string($_POST['fText']);  // Échappé OK
+    $author = $conn->real_escape_string($_POST['author']);
+    $date = date('Y-m-d H:i:s');
+    
+    // Upload image
+    $imagePath = '';
+    if (isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
+        $uploadDir = 'uploads/';
+        if (!file_exists($uploadDir)) mkdir($uploadDir, 0777, true);
+        
+        $imageExtension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+        $imageName = uniqid() . '.' . $imageExtension;
+        $imagePath = $uploadDir . $imageName;
+        move_uploaded_file($_FILES['image']['tmp_name'], $imagePath);
+    }
+    
+    // ✅ BACKTICKS `fullText` → mot réservé !
+    $sql = "INSERT INTO articles (title, excerpt, `fText`, author, `date`, image ) 
+            VALUES ('$title', '$excerpt', '$fText', '$author', '$date', '$imagePath')";
+    
+    if ($conn->query($sql)) {
+        header("Location: blog.php?success=1");
+        exit;
+    } else {
+        echo "Erreur SQL: " . $conn->error;
+    }
+}
+
+// AJAX fetch articles
+if (isset($_GET['fetch'])) {
+    $result = $conn->query("SELECT * FROM articles ORDER BY id DESC");
+    $articles = [];
+    while ($row = $result->fetch_assoc()) {
+        $articles[] = $row;
+    }
+    header('Content-Type: application/json');
+    echo json_encode($articles);
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <title>Coffee - Free Bootstrap 4 Template by Colorlib</title>
+   <title>Blog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -11,19 +62,13 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -39,10 +84,6 @@
             background-color: #1a1a1a;
             color: #fff;
         }
-
-        
-
-        
 
         .cart {
             position: relative;
@@ -64,13 +105,37 @@
             font-size: 12px;
         }
 
-       
+        .add-article-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #c9a55a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: #000;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(201, 165, 90, 0.4);
+            transition: all 0.3s ease;
+            z-index: 999;
+            border: none;
+        }
+
+        .add-article-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(201, 165, 90, 0.6);
+        }
 
         .blog-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
+            gap: 35px;
+            margin-top: 150px;
+            padding-top: 20px;
         }
 
         .blog-card {
@@ -170,6 +235,7 @@
             align-items: center;
             gap: 10px;
             margin-top: 60px;
+            padding-bottom: 40px;
         }
 
         .pagination button {
@@ -281,20 +347,113 @@
             margin-bottom: 20px;
         }
 
+        /* Form Modal */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #c9a55a;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-group input[type="file"] {
+            padding: 8px;
+        }
+
+        .submit-btn {
+            background-color: #c9a55a;
+            color: #000;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #b39550;
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 768px) {
             .blog-grid {
-                grid-template-columns: 1fr;
+               margin-top: 20px;
             }
             
             .modal-content {
                 margin: 20px;
                 padding: 30px 20px;
             }
+
+            .add-article-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
         }
+        
+      
+    .add-article-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 160px;
+    height: 55px;
+    background: linear-gradient(135deg, #c9a55a 0%, #d4b475 100%);
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 8px;  /* Carré arrondi */
+    box-shadow: 0 8px 25px rgba(201, 165, 90, 0.4);
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideUp 0.5s ease-out, pulse 2s infinite;
+}
+.add-article-btn:active {
+    transform: translateY(-1px);
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 8px 25px rgba(201, 165, 90, 0.4); }
+    50% { box-shadow: 0 8px 35px rgba(201, 165, 90, 0.7); }
+}
+
     </style>
-
-
-    
   </head>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -324,7 +483,7 @@
 	        </ul>
 	      </div>
 		  </div>
-	  </nav></header>
+	  </nav>
 
     <div class="container">
         <div class="blog-grid" id="blogGrid">
@@ -342,6 +501,9 @@
         </div>
     </div>
 
+    <!-- Bouton flottant pour ajouter un article -->
+    <button class="add-article-btn" onclick="openAddModal()">Add Article</button>
+
     <!-- Modal pour afficher l'article complet -->
     <div class="modal" id="articleModal">
         <div class="modal-content">
@@ -353,210 +515,143 @@
         </div>
     </div>
 
-    <script>
-        // Base de données des articles
-        const articles = [
-            {
-                id: 1,
-                title: "L'Art du Cappuccino Parfait",
-                date: "Janvier 15, 2026",
-                author: "Nouhaila",
-                comments: 8,
-                image: "images/cappuchino.jpg",
-                excerpt: "Découvrez les secrets pour créer un cappuccino parfait à la maison. La clé réside dans trois éléments essentiels...",
-                fullText: `
-                    <p>Découvrez les secrets pour créer un cappuccino parfait à la maison. La clé réside dans trois éléments essentiels: un espresso bien extrait, du lait parfaitement texturé, et la bonne température.</p>
-                    
-                    <p>Le cappuccino est l'une des boissons les plus appréciées dans le monde du café. Son équilibre parfait entre espresso, lait chaud et mousse de lait en fait une expérience gustative unique.</p>
-                    
-                    <p><strong>Les étapes essentielles:</strong></p>
-                    <p>1. Commencez par préparer un espresso de qualité - utilisez environ 18-20g de café fraîchement moulu.</p>
-                    <p>2. Faites chauffer votre lait à environ 65°C tout en créant une micro-mousse onctueuse.</p>
-                    <p>3. Versez le lait texturé sur l'espresso en créant les proportions classiques: 1/3 espresso, 1/3 lait chaud, 1/3 mousse.</p>
-                    
-                    <p>La pratique est la clé du succès. N'hésitez pas à expérimenter jusqu'à trouver votre technique parfaite!</p>
-                `
-            },
-            {
-                id: 2,
-                title: "Nouveau Menu Printemps 2026",
-                date: "Janvier 10, 2026",
-                author: "Ahmed",
-                comments: 12,
-                image: "images/menu.jpg",
-                excerpt: "Cette saison, nous vous présentons nos nouvelles créations: le Latte à la Fleur d'Oranger, le Cappuccino aux Amandes...",
-                fullText: `
-                    <p>Cette saison, nous vous présentons nos nouvelles créations inspirées par les saveurs marocaines traditionnelles.</p>
-                    
-                    <p><strong>Latte à la Fleur d'Oranger:</strong> Une combinaison délicate de notre espresso signature avec du lait vapeur et un sirop maison à la fleur d'oranger. Chaque gorgée vous transporte dans les jardins méditerranéens.</p>
-                    
-                    <p><strong>Cappuccino aux Amandes:</strong> Notre cappuccino classique enrichi d'un sirop d'amandes artisanal et saupoudré d'amandes effilées grillées.</p>
-                    
-                    <p><strong>Iced Caramel Macchiato:</strong> Notre signature pour les journées chaudes - espresso versé sur de la glace, lait froid, et un généreux filet de caramel maison.</p>
-                    
-                    <p>Venez découvrir ces nouvelles saveurs dès maintenant dans tous nos cafés Daily Dose!</p>
-                `
-            },
-            {
-                id: 3,
-                title: "Notre Café: De la Graine à la Tasse",
-                date: "Janvier 5, 2026",
-                author: "Youssef",
-                comments: 15,
-                image: "images/La tasse et les graines.jpg",
-                excerpt: "Découvrez le voyage fascinant de nos grains de café, depuis les plantations éthiopiennes jusqu'à votre tasse...",
-                fullText: `
-                    <p>Le café que vous dégustez chez Daily Dose a parcouru un long chemin avant d'arriver dans votre tasse.</p>
-                    
-                    <p><strong>L'origine:</strong> Nous travaillons directement avec des coopératives de petits producteurs en Éthiopie, en Colombie et au Brésil. Chaque ferme est sélectionnée pour la qualité exceptionnelle de ses grains et ses pratiques durables.</p>
-                    
-                    <p><strong>La récolte:</strong> Les cerises de café sont récoltées à la main au moment optimal de maturité. Cette méthode traditionnelle garantit que seuls les meilleurs grains sont sélectionnés.</p>
-                    
-                    <p><strong>La torréfaction:</strong> Dans notre torréfaction locale, nous développons des profils de torréfaction uniques pour chaque origine. Ce processus artisanal révèle les arômes naturels des grains.</p>
-                    
-                    <p><strong>La préparation:</strong> Enfin, nos baristas experts transforment ces grains premium en la boisson que vous aimez.</p>
-                    
-                    <p>C'est cette attention à chaque étape qui fait la différence dans votre tasse.</p>
-                `
-            },
-            {
-                id: 4,
-                title: "Atelier Latte Art ce Weekend",
-                date: "Janvier 17, 2026",
-                author: "Fatima",
-                comments: 23,
-                image: "images/lattee.jpg",
-                excerpt: "Rejoignez-nous samedi prochain pour un atelier pratique de Latte Art. Apprenez à créer des rosettes, cœurs et tulipes...",
-                fullText: `
-                    <p>Vous avez toujours voulu apprendre à créer ces magnifiques dessins dans votre cappuccino? C'est votre chance!</p>
-                    
-                    <p><strong>Programme de l'atelier:</strong></p>
-                    <p>• 10h00 - Accueil et introduction au Latte Art</p>
-                    <p>• 10h30 - Techniques de texturage du lait</p>
-                    <p>• 11h30 - Pratique des formes de base (cœur, rosette)</p>
-                    <p>• 13h00 - Pause déjeuner avec dégustation</p>
-                    <p>• 14h00 - Techniques avancées (tulipe, cygne)</p>
-                    <p>• 16h00 - Session libre et questions</p>
-                    
-                    <p><strong>Ce qui est inclus:</strong> Tout le matériel nécessaire, café illimité, déjeuner léger, et un certificat de participation.</p>
-                    
-                    <p><strong>Prix:</strong> 450 DH par personne</p>
-                    <p><strong>Places limitées:</strong> Maximum 10 participants pour garantir une attention personnalisée.</p>
-                    
-                    <p>Réservez votre place dès maintenant en appelant le 08255555 ou en passant au café!</p>
-                `
-            },
-            {
-                id: 5,
-                title: "Les Bienfaits du Café pour la Santé",
-                date: "Janvier 12, 2026",
-                author: "Dr. Karim",
-                comments: 18,
-                image: "images/sante.jpg",
-                excerpt: "Des études récentes montrent que le café, consommé avec modération, offre de nombreux avantages pour la santé...",
-                fullText: `
-                    <p>Le café est bien plus qu'une simple boisson énergisante. Les recherches scientifiques révèlent de nombreux bienfaits pour la santé.</p>
-                    
-                    <p><strong>Amélioration cognitive:</strong> La caféine améliore la concentration, la mémoire et les performances mentales. Une tasse le matin peut booster votre productivité toute la journée.</p>
-                    
-                    <p><strong>Antioxydants puissants:</strong> Le café est l'une des principales sources d'antioxydants dans l'alimentation occidentale. Ces composés protègent vos cellules contre les dommages.</p>
-                    
-                    <p><strong>Protection cardiovasculaire:</strong> Contrairement aux idées reçues, une consommation modérée de café (3-4 tasses par jour) est associée à une réduction du risque de maladies cardiaques.</p>
-                    
-                    <p><strong>Prévention du diabète:</strong> Des études montrent qu'une consommation régulière de café peut réduire le risque de diabète de type 2.</p>
-                    
-                    <p><strong>La modération est clé:</strong> Pour profiter de ces bienfaits, limitez votre consommation à 400mg de caféine par jour (environ 4 tasses) et évitez d'ajouter trop de sucre.</p>
-                `
-            },
-            {
-                id: 6,
-                title: "Rencontre avec Nos Producteurs",
-                date: "Janvier 8, 2026",
-                author: "Laila",
-                comments: 10,
-                image: "images/cappuchino.jpg",
-                excerpt: "Ce mois-ci, nous avons visité les coopératives de café au Brésil et en Colombie. Découvrez leur passion...",
-                fullText: `
-                    <p>Notre voyage de sourcing nous a menés dans les montagnes du Brésil et de Colombie, où nous avons rencontré les familles qui cultivent votre café quotidien.</p>
-                    
-                    <p><strong>Ferme São Paulo, Brésil:</strong> Maria et José cultivent du café depuis trois générations. Leur ferme de 15 hectares produit un café doux avec des notes de chocolat et de noisette. Ils utilisent des méthodes biologiques et récoltent à la main.</p>
-                    
-                    <p><strong>Coopérative de Huila, Colombie:</strong> Cette coopérative regroupe 50 petits producteurs qui travaillent ensemble pour améliorer la qualité et obtenir de meilleurs prix. Leur café est connu pour sa douceur et ses notes fruitées.</p>
-                    
-                    <p><strong>Commerce équitable:</strong> Nous payons 30% au-dessus des prix du marché pour garantir que les producteurs peuvent vivre dignement de leur travail et investir dans l'amélioration de leurs fermes.</p>
-                    
-                    <p><strong>Impact social:</strong> Une partie de nos bénéfices finance des écoles et des centres de santé dans ces communautés rurales.</p>
-                    
-                    <p>Quand vous buvez une tasse de Daily Dose, vous soutenez ces familles et leurs communautés. Merci de faire partie de cette chaîne de solidarité!</p>
-                `
-            }
-        ];
+    <!-- Modal pour ajouter un article -->
+    <div class="modal" id="addArticleModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAddModal()">&times;</span>
+            <h2 class="modal-title">Ajouter un nouvel article</h2>
+            
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="title">Titre de l'article *</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
 
-        // Fonction pour afficher les articles
+                <div class="form-group">
+                    <label for="author">Auteur *</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="excerpt">Extrait (résumé court) *</label>
+                    <textarea id="excerpt" name="excerpt" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="fText">Texte complet de l'article *</label>
+                    <textarea id="fText" name="fText" rows="8" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Image de l'article</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+
+                <button type="submit" name="add_article" class="submit-btn">Publier l'article</button>
+            </form>
+        </div>
+    </div>
+
+   <script>
+        let articles = [];
+
+        function loadArticles() {
+            fetch("blog.php?fetch=1")
+                .then(res => res.json())
+                .then(data => {
+                    articles = data;
+                    displayArticles();
+                })
+                .catch(err => console.error('Erreur de chargement:', err));
+        }
+
         function displayArticles() {
             const blogGrid = document.getElementById('blogGrid');
             blogGrid.innerHTML = '';
 
             articles.forEach(article => {
+                const imageHtml = article.image 
+                    ? `<img src="${article.image}" alt="${article.title}" />`
+                    : '☕';
+                
                 const card = `
-                    <div class="blog-card" onclick="openModal(${article.id})">
-                        <div class="blog-image">
-                            <img src="${article.image}" alt="${article.title}" />
-                        </div>
+                    <div class="blog-card" data-id="${article.id}">
+                        <div class="blog-image">${imageHtml}</div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <span>📅 ${article.date}</span>
                                 <span>👤 ${article.author}</span>
-                                <span>💬 ${article.comments}</span>
                             </div>
                             <h3 class="blog-title">${article.title}</h3>
                             <p class="blog-excerpt">${article.excerpt}</p>
-                            <a href="#" class="read-more" onclick="event.stopPropagation(); openModal(${article.id})">LIRE LA SUITE →</a>
+                            <a href="#" class="read-more" data-id="${article.id}">LIRE LA SUITE →</a>
                         </div>
                     </div>
                 `;
                 blogGrid.innerHTML += card;
             });
+
+            // 🔥 CORRECTION : Attacher les événements APRÈS avoir ajouté les éléments au DOM
+            articles.forEach(article => {
+                document.querySelector(`[data-id="${article.id}"] .read-more`)?.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openModal(article.id);
+                });
+            });
         }
 
-        // Fonction pour ouvrir le modal avec l'article complet
         function openModal(articleId) {
-            const article = articles.find(a => a.id === articleId);
+            const article = articles.find(a => a.id == articleId);
             if (!article) return;
 
             document.getElementById('modalTitle').textContent = article.title;
             document.getElementById('modalMeta').innerHTML = `
                 <span>📅 ${article.date}</span>
                 <span>👤 ${article.author}</span>
-                <span>💬 ${article.comments} commentaires</span>
             `;
-            document.getElementById('modalText').innerHTML = article.fullText;
-            document.getElementById('modalImage').innerHTML = `<img src="${article.image}" alt="${article.title}" />`;
+            document.getElementById('modalText').innerHTML = article.fText;
+            
+            const imageHtml = article.image 
+                ? `<img src="${article.image}" alt="${article.title}" />`
+                : '☕';
+            document.getElementById('modalImage').innerHTML = imageHtml;
             
             document.getElementById('articleModal').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
 
-        // Fonction pour fermer le modal
         function closeModal() {
             document.getElementById('articleModal').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
 
-        // Fermer le modal en cliquant en dehors
+        function openAddModal() {
+            document.getElementById('addArticleModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeAddModal() {
+            document.getElementById('addArticleModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
         document.getElementById('articleModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeModal();
             }
         });
 
-        // Fonction pour changer de page
+        document.getElementById('addArticleModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAddModal();
+            }
+        });
+
         function changePage(direction) {
             console.log('Changement de page:', direction);
         }
 
-        // Initialiser l'affichage
-        displayArticles();
+        loadArticles();
     </script>
 </body>
 </html>

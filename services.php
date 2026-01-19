@@ -46,7 +46,6 @@
               <a class="nav-link dropdown-toggle" href="room.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
               	<a class="dropdown-item" href="shop.php">Shop</a>
-                <a class="dropdown-item" href="product-single.php">Single Product</a>
                 <a class="dropdown-item" href="cart.php">Cart</a>
                 <a class="dropdown-item" href="checkout.php">Checkout</a>
               </div>
@@ -60,6 +59,7 @@
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
+
 
       <div class="slider-item" style="background-image: url(images/restau7.jpg);" data-stellar-background-ratio="0.5">
       	<div class="overlay"></div>
@@ -75,6 +75,75 @@
         </div>
       </div>
     </section>
+    
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; }
+        h1 { text-align: center; color: #333; }
+        
+        /* Style du menu de navigation */
+        nav { background: #333; padding: 10px; margin-bottom: 30px; border-radius: 5px; }
+        nav a { color: white; text-decoration: none; margin-right: 15px; }
+
+        /* Grille des plats */
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .card img { max-width: 100%; border-radius: 8px; }
+        .card h3 { color: #e67e22; }
+        
+        /* Bouton d'appel */
+        .btn-call { 
+            display: inline-block; 
+            background: #27ae60; 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .btn-call:hover { background: rgb(36, 187, 99); }
+        
+        .delivery-info { text-align: center; margin-top: 40px; padding: 20px; background: #fff3e0; border: 1px solid #ffe0b2; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="menu.php" style="font-weight: bold; border-bottom: 2px solid white;"> Menu</a>
+    </nav>
+
+    <h1>Choisissez vos plats</h1>
+
+    <div class="menu-grid">
+        <div class="card">
+            <h3>Tagliatelle primavera</h3>
+            <p>pate aux legumes de saison.</p>
+            <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
+        </div>
+
+        <div class="card">
+            <h3>Magret de canard roti aux epices</h3>
+            <p>legumes grilles ,fruits conflits de saison ,sauce gingembre.</p>
+            <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
+        </div>
+
+        <div class="card">
+            <h3>Tagliatelle au saumon fumé</h3>
+            <p>Feuilleté croustillant aux fruits de mer.</p>
+            <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
+        </div>
+    </div>
+
+    <div class="delivery-info">
+        <h3>Livreur disponible maintenant</h3>
+        <p>Appelez directement le <strong>+212 8255555</strong> pour passer votre commande rapidement.</p>
+    </div>
+</div>
+
+
 
     <section class="ftco-section ftco-services">
     	<div class="container">
@@ -128,13 +197,13 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Recent Blog</h2>
+             <h2 class="ftco-heading-2"> Recent Blog</h2>
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                 <div class="text">
+                  <h3 class="heading"><a href="#">Discover the Art of Espresso: A Beginner's Guide</a></h3>
                   <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2025</a></div>
                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
                     <div><a href="#"><span class="icon-chat"></span> 19</a></div>
                   </div>
@@ -143,9 +212,9 @@
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
                 <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <h3 class="heading"><a href="#">How to Pair Your Coffee with the Perfect Pastry</a></h3>
                   <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                    <div><a href="#"><span class="icon-calendar"></span> Oct 24, 2025</a></div>
                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
                     <div><a href="#"><span class="icon-chat"></span> 19</a></div>
                   </div>
