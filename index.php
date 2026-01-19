@@ -666,18 +666,25 @@
 		      </div>
 		    </div>
     	</div>
-    </section>
+    <section class="ftco-appointment">
+    <div class="overlay"></div>
+    <div class="container-wrap">
+        <div class="row no-gutters d-md-flex align-items-center">
 
+            <div class="col-md-6 d-flex align-self-stretch">
+                <div id="map">
+                    <iframe
+                        src="https://www.bing.com/maps?q=ensa+khouribga&cp=32.896891~-6.914236&lvl=16.7&style=r&embed=1"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
 
-		
-		<section class="ftco-appointment">
-			<div class="overlay"></div>
-    	<div class="container-wrap">
-    		<div class="row no-gutters d-md-flex align-items-center">
-    			<div class="col-md-6 d-flex align-self-stretch">
-    				<div id="map"></div>
-    			</div>
-	    		<div class="book p-4">
+            <div class="book p-4">
+
   <h3>Book a Table</h3>
 
   <form action="book.php" method="POST" class="appointment-form">
