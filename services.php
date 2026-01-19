@@ -61,7 +61,7 @@
 
     <section class="home-slider owl-carousel">
 
-      <div class="slider-item" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+      <div class="slider-item" style="background-image: url(images/salma.jpeg);" data-stellar-background-ratio="0.5">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center">
@@ -102,7 +102,7 @@
             margin-top: 10px;
             font-weight: bold;
         }
-        .btn-call:hover { background: #219150; }
+        .btn-call:hover { background: rgb(36, 187, 99); }
         
         .delivery-info { text-align: center; margin-top: 40px; padding: 20px; background: #fff3e0; border: 1px solid #ffe0b2; }
     </style>
@@ -111,8 +111,8 @@
 
 <div class="container">
     <nav>
-        <a href="index.php">Accueil</a>
-        <a href="services.php" style="font-weight: bold; border-bottom: 2px solid white;">Services / Menu</a>
+        <a href="index.php">Home</a>
+        <a href="menu.php" style="font-weight: bold; border-bottom: 2px solid white;"> Menu</a>
     </nav>
 
     <h1>Choisissez vos plats</h1>
