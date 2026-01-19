@@ -62,8 +62,7 @@ $_SESSION['grandTotal'] = $grandTotal;
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.php">Shop</a>
-                <a class="dropdown-item" href="product-single.php">Single Product</a>
+              	<a class="dropdown-item" href="menu.php">Menu</a>
                 <a class="dropdown-item" href="cart.php">Cart</a>
                 <a class="dropdown-item" href="checkout.php">Checkout</a>
               </div>

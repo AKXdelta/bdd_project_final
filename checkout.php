@@ -51,8 +51,7 @@ $grandTotal = isset($_SESSION['grandTotal']) ? $_SESSION['grandTotal'] : 0;
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.php">Shop</a>
-                <a class="dropdown-item" href="product-single.php">Single Product</a>
+               <a class="dropdown-item" href="menu.php">Menu</a>
                 <a class="dropdown-item" href="cart.php">Cart</a>
                 <a class="dropdown-item" href="checkout.php">Checkout</a>
               </div>
@@ -66,7 +65,7 @@ $grandTotal = isset($_SESSION['grandTotal']) ? $_SESSION['grandTotal'] : 0;
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
-  <div class="slider-item" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+  <div class="slider-item" style="background-image: url(images/rest4.avif);" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
       <div class="row slider-text justify-content-center align-items-center">

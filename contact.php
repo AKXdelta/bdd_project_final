@@ -45,9 +45,8 @@
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.php">Shop</a>
-                <a class="dropdown-item" href="product-single.php">Single Product</a>
-                <a class="dropdown-item" href="room.php">Cart</a>
+              	<a class="dropdown-item" href="menu.php">Menu</a>
+                <a class="dropdown-item" href="cart.php">Cart</a>
                 <a class="dropdown-item" href="checkout.php">Checkout</a>
               </div>
             </li>
@@ -61,7 +60,7 @@
 
     <section class="home-slider owl-carousel">
 
-      <div class="slider-item" style="background-image: url(images/coffe.avif);" data-stellar-background-ratio="0.5">
+      <div class="slider-item" style="background-image: url(images/360.jpg);" data-stellar-background-ratio="0.5">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center">
@@ -145,7 +144,7 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Recent Blog</h2>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">Discover the Art of Espresso: A Beginner's Guide</a></h3>
                   <div class="meta">

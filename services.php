@@ -45,7 +45,7 @@
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.php">Shop</a>
+              	<a class="dropdown-item" href="menu.php">Menu</a>
                 <a class="dropdown-item" href="cart.php">Cart</a>
                 <a class="dropdown-item" href="checkout.php">Checkout</a>
               </div>
@@ -115,33 +115,266 @@
         <a href="menu.php" style="font-weight: bold; border-bottom: 2px solid white;"> Menu</a>
     </nav>
 
-    <h1>Choisissez vos plats</h1>
-
-    <div class="menu-grid">
-        <div class="card">
-            <h3>Tagliatelle primavera</h3>
-            <p>pate aux legumes de saison.</p>
-            <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
+   
+    <section class="ftco-menu mb-5 pb-5">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Découvrez</span>
+            <h2 class="mb-4">Nos Meilleurs Produits</h2>
+            
+          </div>
         </div>
+    		<div class="row d-md-flex">
+	    		<div class="col-lg-12 ftco-animate p-md-5">
+		    		<div class="row">
+		          <div class="col-md-12 nav-link-wrap mb-5">
+		            <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Nos Plats</a>
 
-        <div class="card">
-            <h3>Magret de canard roti aux epices</h3>
-            <p>legumes grilles ,fruits conflits de saison ,sauce gingembre.</p>
-            <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
-        </div>
+		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Nos boissons</a>
 
-        <div class="card">
-            <h3>Tagliatelle au saumon fumé</h3>
-            <p>Feuilleté croustillant aux fruits de mer.</p>
-            <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
-        </div>
-    </div>
+		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Nos Desserts</a>
+		            </div>
+		          </div>
+		          <div class="col-md-12 d-flex align-items-center">
+		            
+		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
 
-    <div class="delivery-info">
-        <h3>Livreur disponible maintenant</h3>
-        <p>Appelez directement le <strong>+212 8255555</strong> pour passer votre commande rapidement.</p>
-    </div>
-</div>
+		              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+		              	<div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/thon.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Thon rouge de Méditerranée mi-cuit</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                             <input type="hidden" name="name" value="Thon rouge de Méditerranée mi-cuit">
+                                             <input type="hidden" name="price" value="270.00">
+                                             <input type="hidden" name="image" value="images/thon.webp">
+
+                                             <button type="submit" class="btn btn-primary btn-outline-primary">
+                                              Add to cart
+                                              </button>
+                                           </form>
+
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/cote.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Côte de veau rôtie au sautoir</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Côte de veau rôtie au sautoir">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/cote.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/saumon.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Saumon grillé</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Saumon grillé">
+                                        <input type="hidden" name="price" value="260.0">
+                                        <input type="hidden" name="image" value="images/saumon.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/canard.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Magret de canard rôti aux épices</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Magret de canard rôti aux épices">
+                                        <input type="hidden" name="price" value="300.0">
+                                        <input type="hidden" name="image" value="images/canard.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/rissoto.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Risotto à la truffe noire</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Risotto à la truffe noire">
+                                        <input type="hidden" name="price" value="270.00">
+                                        <input type="hidden" name="image" value="images/rissoto.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		
+		              		
+		              	</div>
+		              </div>
+
+		              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/orange.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Jus d'orange</a></h3>
+		              					
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus d'orange">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/orange.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/citron.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Jus de citron</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Jus de citron">
+                                        <input type="hidden" name="price" value="50.0">
+                                        <input type="hidden" name="image" value="images/citron.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/coco.avif);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Lait de coco</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Lait de coco">
+                                        <input type="hidden" name="price" value="60.0">
+                                        <input type="hidden" name="image" value="images/coco.avif">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+
+		              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/framb2.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Cheesecake framboise</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Cheesecake framboise">
+                                        <input type="hidden" name="price" value="100.0">
+                                        <input type="hidden" name="image" value="images/framb2.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/fondant.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Fondant au chocolat</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fondant au chocolat">
+                                        <input type="hidden" name="price" value="90.0">
+                                        <input type="hidden" name="image" value="images/fondant.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pavlova.webp);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Pavlova fruits rouges</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Pavlova fruits rouges">
+                                        <input type="hidden" name="price" value="170.0">
+                                        <input type="hidden" name="image" value="images/Pavlova.webp">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/Pommes.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Fine tarte aux pommes</a></h3>
+		              					<form action="add_to_cart.php" method="POST">
+                                        <input type="hidden" name="name" value="Fine tarte aux pommes">
+                                        <input type="hidden" name="price" value="95.0">
+                                        <input type="hidden" name="image" value="images/Pommes.jpg">
+
+                                           <button type="submit" class="btn btn-primary btn-outline-primary">
+                                        Add to cart
+                                           </button>
+                                        </form>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+    	</div>
 
 
 
@@ -155,7 +388,6 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Easy to Order</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
           </div>
@@ -166,7 +398,6 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Fastest Delivery</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
           </div>
@@ -176,7 +407,6 @@
               	<span class="flaticon-coffee-bean"></span></div>
               <div class="media-body">
                 <h3 class="heading">Quality Coffee</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>    
           </div>

@@ -45,9 +45,8 @@
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.php">Shop</a>
-                <a class="dropdown-item" href="product-single.php">Single Product</a>
-                <a class="dropdown-item" href="room.php">Cart</a>
+              	<a class="dropdown-item" href="menu.php">Menu</a>
+                <a class="dropdown-item" href="cart.php">Cart</a>
                 <a class="dropdown-item" href="checkout.php">Checkout</a>
               </div>
             </li>
@@ -377,7 +376,7 @@ Every visit is a new experience, because every moment deserves its own Daily Dos
     						<form action="add_to_cart.php" method="POST">
                               <input type="hidden" name="name" value="Café noir italien">
                               <input type="hidden" name="price" value="65.00DHS">
-                              <input type="hidden" name="image" value="images/menu-3.jpg">
+                              <input type="hidden" name="image" value="images/cafeit.webp">
 
                                <button type="submit" class="btn btn-primary btn-outline-primary">
                                  Add to cart
@@ -667,75 +666,7 @@ Every visit is a new experience, because every moment deserves its own Daily Dos
 		      </div>
 		    </div>
     	</div>
-    <section class="ftco-appointment">
-    <div class="overlay"></div>
-    <div class="container-wrap">
-        <div class="row no-gutters d-md-flex align-items-center">
-
-            <div class="col-md-6 d-flex align-self-stretch">
-                <div id="map">
-                    <iframe
-                        src="https://www.bing.com/maps?q=ensa+khouribga&cp=32.896891~-6.914236&lvl=16.7&style=r&embed=1"
-                        width="100%"
-                        height="100%"
-                        style="border:0;"
-                        loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-
-            <div class="book p-4">
-
-  <h3>Book a Table</h3>
-
-  <form action="book.php" method="POST" class="appointment-form">
-
-    <div class="d-md-flex">
-      <div class="form-group">
-        <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
-      </div>
-
-      <div class="form-group ml-md-4">
-        <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
-      </div>
-    </div>
-
-    <div class="d-md-flex">
-      <div class="form-group">
-        <div class="input-wrap">
-          <div class="icon"><span class="ion-md-calendar"></span></div>
-          <input type="date" name="reservation_date" class="form-control" required>
-        </div>
-      </div>
-
-      <div class="form-group ml-md-4">
-        <div class="input-wrap">
-          <div class="icon"><span class="ion-ios-clock"></span></div>
-          <input type="time" name="reservation_time" class="form-control" required>
-        </div>
-      </div>
-
-      <div class="form-group ml-md-4">
-        <input type="text" name="phone" class="form-control" placeholder="Phone" required>
-      </div>
-    </div>
-
-    <div class="d-md-flex">
-      <div class="form-group">
-        <textarea name="message" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-      </div>
-
-      <div class="form-group ml-md-4">
-        <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
-      </div>
-    </div>
-
-  </form>
-</div>
-
-    		</div>
-    	</div>
-    </section>
+   
 
     <footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>

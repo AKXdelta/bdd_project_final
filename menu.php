@@ -45,9 +45,8 @@
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.php">Shop</a>
-                <a class="dropdown-item" href="product-single.php">Single Product</a>
-                <a class="dropdown-item" href="room.php">Cart</a>
+				<a class="dropdown-item" href="menu.php">Menu</a>
+                <a class="dropdown-item" href="cart.php">Cart</a>
                 <a class="dropdown-item" href="checkout.php">Checkout</a>
               </div>
             </li>
@@ -745,6 +744,7 @@
 	        			</div>
 	        		</div>
         		</div>
+					
         		<div class="pricing-entry d-flex ftco-animate">
         			<div class="img" style="background-image: url(images/citron.jpg);"></div>
         			<div class="desc pl-3">
@@ -766,6 +766,51 @@
 	        			</div>
 	                     </div>
 	        		</div>
+        		
+        		<div class="pricing-entry d-flex ftco-animate">
+        			<div class="img" style="background-image: url(images/capu.avif);"></div>
+        			<div class="desc pl-3">
+	        			<div class="d-flex text align-items-center">
+	        				<h3><span>Coffee Capuccino</span></h3>
+	        				<span class="price">60.00DHS</span>
+	        			</div>
+	        			<div class="d-block">
+	        				
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Coffee Capuccino">
+                              <input type="hidden" name="price" value="60.00">
+                              <input type="hidden" name="image" value="images/capu.avif">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
+	        			</div>
+	        			</div>
+	        		
+        		</div>
+				
+				<div class="pricing-entry d-flex ftco-animate">
+        			<div class="img" style="background-image: url(images/espresso.avif);"></div>
+        			<div class="desc pl-3">
+	        			<div class="d-flex text align-items-center">
+	        				<h3><span>Espresso</span></h3>
+	        				<span class="price">55.00DHS</span>
+	        			</div>
+	        			<div class="d-block">
+	        				
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Espresso">
+                              <input type="hidden" name="price" value="55.00">
+                              <input type="hidden" name="image" value="images/espresso.avif">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
+	        			</div>
+	        			</div>
+	        		
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
         			<div class="img" style="background-image: url(images/coco.avif);"></div>
@@ -787,8 +832,47 @@
                                  </form>
 	        			</div>
 	        			</div>
-	        		</div>
-        		</div>
+	        	</div>
+				<div class="pricing-entry d-flex ftco-animate">
+        			<div class="img" style="background-image: url(images/cafeit.webp);"></div>
+        			<div class="desc pl-3">
+	        			<div class="d-flex text align-items-center">
+	        				<h3><span>Café noir italien</span></h3>
+	        				<span class="price">65.00DHS</span>
+	        			</div>
+	        			<div class="d-block">
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="Café noir italien">
+                              <input type="hidden" name="price" value="65.00">
+                              <input type="hidden" name="image" value="images/cafeit.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
+	        			</div>
+	        			</div>
+	        	</div>
+				<div class="pricing-entry d-flex ftco-animate">
+        			<div class="img" style="background-image: url(images/latte.webp);"></div>
+        			<div class="desc pl-3">
+	        			<div class="d-flex text align-items-center">
+	        				<h3><span>LATTE</span></h3>
+	        				<span class="price">70.00DHS</span>
+	        			</div>
+	        			<div class="d-block">
+							<form action="add_to_cart.php" method="POST">
+                              <input type="hidden" name="name" value="LATTE">
+                              <input type="hidden" name="price" value="70.00">
+                              <input type="hidden" name="image" value="images/latte.webp">
+
+                               <button type="submit" class="btn btn-primary btn-outline-primary">
+                                 Add to cart
+                                </button>
+                                 </form>
+	        			</div>
+	        			</div>
+	        	</div>
         		<div class="pricing-entry d-flex ftco-animate">
         			<div class="img" style="background-image: url(images/the.jpg);"></div>
         			<div class="desc pl-3">
