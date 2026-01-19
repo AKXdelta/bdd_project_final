@@ -119,19 +119,19 @@
 
     <div class="menu-grid">
         <div class="card">
-            <h3>Couscous Royal</h3>
-            <p>Un classique savoureux avec légumes frais et viande.</p>
+            <h3>Tagliatelle primavera</h3>
+            <p>pate aux legumes de saison.</p>
             <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
         </div>
 
         <div class="card">
-            <h3>Tagine de Poulet</h3>
-            <p>Poulet aux olives et citrons confits.</p>
+            <h3>Magret de canard roti aux epices</h3>
+            <p>legumes grilles ,fruits conflits de saison ,sauce gingembre.</p>
             <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
         </div>
 
         <div class="card">
-            <h3>Pastilla au Poisson</h3>
+            <h3>Tagliatelle au saumon fumé</h3>
             <p>Feuilleté croustillant aux fruits de mer.</p>
             <a href="tel:+2128255555" class="btn-call">Réserver : +212 8255555</a>
         </div>
