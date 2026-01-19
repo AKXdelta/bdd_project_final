@@ -8,7 +8,7 @@ if ($conn->connect_error) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_article'])) {
     $title = $conn->real_escape_string($_POST['title']);
     $excerpt = $conn->real_escape_string($_POST['excerpt']);
-    $fullText = $conn->real_escape_string($_POST['fText']);  // Échappé OK
+    $fText = $conn->real_escape_string($_POST['fText']);  // Échappé OK
     $author = $conn->real_escape_string($_POST['author']);
     $date = date('Y-m-d H:i:s');
     
@@ -25,8 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_article'])) {
     }
     
     // ✅ BACKTICKS `fullText` → mot réservé !
-    $sql = "INSERT INTO articles (title, excerpt, `fText`, author, `date`, image, comments) 
-            VALUES ('$title', '$excerpt', '$fText', '$author', '$date', '$imagePath', 0)";
+    $sql = "INSERT INTO articles (title, excerpt, `fText`, author, `date`, image ) 
+            VALUES ('$title', '$excerpt', '$fText', '$author', '$date', '$imagePath')";
     
     if ($conn->query($sql)) {
         header("Location: blog.php?success=1");
@@ -52,7 +52,7 @@ if (isset($_GET['fetch'])) {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <title>Coffee - Free Bootstrap 4 Template by Colorlib</title>
+   <title>Blog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -538,8 +538,8 @@ if (isset($_GET['fetch'])) {
                 </div>
 
                 <div class="form-group">
-                    <label for="fullText">Texte complet de l'article *</label>
-                    <textarea id="fullText" name="fullText" rows="8" required></textarea>
+                    <label for="fText">Texte complet de l'article *</label>
+                    <textarea id="fText" name="fText" rows="8" required></textarea>
                 </div>
 
                 <div class="form-group">
