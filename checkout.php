@@ -65,7 +65,9 @@ $grandTotal = isset($_SESSION['grandTotal']) ? $_SESSION['grandTotal'] : 0;
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
+
   <div class="slider-item" style="background-image: url(images/rest4.avif);" data-stellar-background-ratio="0.5">
+
     <div class="overlay"></div>
     <div class="container">
       <div class="row slider-text justify-content-center align-items-center">
