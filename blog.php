@@ -1,8 +1,3 @@
-<?php
-$conn = new mysqli("localhost", "root", "", "db_articles");
-if ($conn->connect_error) {
-    die("Erreur connexion DB");
-}
 
 // HANDLE ARTICLE UNE SEULE FOIS
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_article'])) {
