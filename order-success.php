@@ -7,7 +7,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { width: 100%; height: 100%; font-family: Arial, sans-serif; overflow: hidden; }
 
-    
+    /* Slideshow en arrière-plan */
     .slideshow {
         position: fixed;
         top: 0; left: 0;
@@ -39,7 +39,7 @@
         100% { opacity: 0; }
     }
 
-    
+    /* Contenu centré */
     .container {
         position: relative;
         height: 100vh;
@@ -69,7 +69,7 @@
 
     .btn {
         padding: 15px 30px;
-        background: #000000;
+        background: #000;
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
@@ -97,23 +97,19 @@
 </head>
 <body>
 
-
 <div class="slideshow">
-    <img src="images/rest3.jpg" alt="Restaurant">
-    <img src="images/rest5.jpg" alt="Salle">
     <img src="images/rest4.avif" alt="Plat">
+     <img src="images/restau7.jpg" alt="Salle">
+    <img src="images/restau4.jpg" alt="Restaurant">
+    
+    
 </div>
 
-
 <div class="container">
-    <h1>Réservation enregistrée avec succès</h1>
-    <p>Merci pour votre réservation. Nous avons bien reçu votre demande.</p>
+    <h1>Commande effectuéeavec succès</h1>
+    <p>Merci pour votre commande. Nous avons bien reçu votre demande.</p>
     <a href="index.php" class="btn">⬅ Retour à la page principale</a>
 </div>
 
 </body>
 </html>
-
-
-
-

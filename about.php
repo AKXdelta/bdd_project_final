@@ -85,7 +85,8 @@
 	          <h2 class="mb-4">Our Story</h2>
 	        </div>
 	        <div>
-	  				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+	  				<p>flavor, and good energy. Born from a love for the little details, we believe that a well-crafted coffee, carefully prepared dishes, and a warm atmosphere can turn any day into something special.
+Every visit is a new experience, because every moment deserves its own Daily Dose of happiness.</p>
 	  			</div>
   			</div>
     	</div>
@@ -98,7 +99,7 @@
 	        <div class="col-md-7 heading-section text-center ftco-animate">
 	        	<span class="subheading">Testimony</span>
 	          <h2 class="mb-4">Customers Says</h2>
-	          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	          
 	        </div>
 	      </div>
 	    </div>
@@ -107,65 +108,81 @@
 	        <div class="col-lg align-self-sm-end">
 	          <div class="testimony">
 	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small.&rdquo;</p>
+	                <p>&ldquo;Great food, friendly staff, and the perfect spot to relax.&rdquo;</p>
 	              </blockquote>
 	              <div class="author d-flex mt-4">
 	                <div class="image mr-3 align-self-center">
 	                  <img src="images/person_1.jpg" alt="">
 	                </div>
+<<<<<<< HEAD
 	                <div class="name align-self-center">salma wahdi<span class="position">Illustrator Designer</span></div>
+=======
+	                <div class="name align-self-center">jamal  </div>
+>>>>>>> 1665e9a8eacd9461edc1374f18fcb604f5568483
 	              </div>
 	          </div>
 	        </div>
 	        <div class="col-lg align-self-sm-end">
 	          <div class="testimony overlay">
 	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
+	                <p>&ldquo;Delicious meals, warm service, and the perfect spot to unwind.&rdquo;</p>
 	              </blockquote>
 	              <div class="author d-flex mt-4">
 	                <div class="image mr-3 align-self-center">
 	                  <img src="images/person_2.jpg" alt="">
 	                </div>
+<<<<<<< HEAD
 	                <div class="name align-self-center">nouhaila mahi <span class="position">Illustrator Designer</span></div>
+=======
+	                <div class="name align-self-center">Ahmed</div>
+>>>>>>> 1665e9a8eacd9461edc1374f18fcb604f5568483
 	              </div>
 	          </div>
 	        </div>
 	        <div class="col-lg align-self-sm-end">
 	          <div class="testimony">
 	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small  line of blind text by the name. &rdquo;</p>
+	                <p>&ldquo;“An amazing experience where good food, great coffee, and genuine hospitality come together. &rdquo;</p>
 	              </blockquote>
 	              <div class="author d-flex mt-4">
 	                <div class="image mr-3 align-self-center">
 	                  <img src="images/person_3.jpg" alt="">
 	                </div>
+<<<<<<< HEAD
 	                <div class="name align-self-center">alaa jabri <span class="position">Illustrator Designer</span></div>
+=======
+	                <div class="name align-self-center">Layla</div>
+>>>>>>> 1665e9a8eacd9461edc1374f18fcb604f5568483
 	              </div>
 	          </div>
 	        </div>
 	        <div class="col-lg align-self-sm-end">
 	          <div class="testimony overlay">
 	             <blockquote>
-	                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however.&rdquo;</p>
+	                <p>&ldquo;Quality food, great service, and a truly relaxing place&rdquo;</p>
 	              </blockquote>
 	              <div class="author d-flex mt-4">
 	                <div class="image mr-3 align-self-center">
 	                  <img src="images/person_2.jpg" alt="">
 	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
+	                <div class="name align-self-center">saaida </div>
 	              </div>
 	          </div>
 	        </div>
 	        <div class="col-lg align-self-sm-end">
 	          <div class="testimony">
 	            <blockquote>
-	              <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small  line of blind text by the name. &rdquo;</p>
+	              <p>&ldquo;Amazing coffee and a cozy atmosphere. A place you always want to come back to &rdquo;</p>
 	            </blockquote>
 	            <div class="author d-flex mt-4">
 	              <div class="image mr-3 align-self-center">
 	                <img src="images/person_3.jpg" alt="">
 	              </div>
+<<<<<<< HEAD
 	              <div class="name align-self-center">salma wahdi <span class="position">Illustrator Designer</span></div>
+=======
+	              <div class="name align-self-center">Naaima</div>
+>>>>>>> 1665e9a8eacd9461edc1374f18fcb604f5568483
 	            </div>
 	          </div>
 	        </div>
@@ -180,8 +197,9 @@
     				<div class="heading-section text-md-right ftco-animate">
 	          	<span class="subheading">Discover</span>
 	            <h2 class="mb-4">Our Menu</h2>
-	            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-	            <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">View Full Menu</a></p>
+	            <p class="mb-4">From your first sip to your last bite, every detail matters.
+Explore our menu and treat yourself to your Daily Dose of flavor 🤍</p>
+	            <p><a href="menu.php" class="btn btn-primary btn-outline-primary px-4 py-3">View Full Menu</a></p>
 	          </div>
     			</div>
     			<div class="col-md-6">
@@ -276,10 +294,10 @@
               <h2 class="ftco-heading-2"> Recent Blog</h2>
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                 <div class="text">
+                  <h3 class="heading"><a href="#">Discover the Art of Espresso: A Beginner's Guide</a></h3>
                   <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2025</a></div>
                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
                     <div><a href="#"><span class="icon-chat"></span> 19</a></div>
                   </div>
@@ -288,9 +306,9 @@
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
                 <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <h3 class="heading"><a href="#">How to Pair Your Coffee with the Perfect Pastry</a></h3>
                   <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                    <div><a href="#"><span class="icon-calendar"></span> Oct 24, 2025</a></div>
                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
                     <div><a href="#"><span class="icon-chat"></span> 19</a></div>
                   </div>
