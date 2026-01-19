@@ -10,22 +10,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = $_POST['message'] ?? '';
 
     if ($email == '') {
-        die("Erreur : le champ email est vide !");
+        header("Location: " . $_SERVER['HTTP_REFERER']);
+        exit();
     }
 
     $stmt = $conn->prepare("INSERT INTO contact_messages (name, email, subject, message) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $name, $email, $subject, $message);
 
-    if ($stmt->execute()) {
-        echo "Message envoyé avec succès !";
-    } else {
-        echo "Erreur : " . $stmt->error;
-    }
-
+    $stmt->execute(); 
     $stmt->close();
     $conn->close();
+ header("Location: " . $_SERVER['HTTP_REFERER']);
+    exit();
+
 } else {
-    header("Location: contact.php");
+    header("Location: " . $_SERVER['HTTP_REFERER']);
     exit();
 }
 ?>
