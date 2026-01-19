@@ -68,7 +68,7 @@
 
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
             	<h1 class="mb-3 mt-5 bread">About Us</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home</a></span> <span>About</span></p>
             </div>
 
           </div>
@@ -113,7 +113,7 @@
 	                <div class="image mr-3 align-self-center">
 	                  <img src="images/person_1.jpg" alt="">
 	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
+	                <div class="name align-self-center">salma wahdi<span class="position">Illustrator Designer</span></div>
 	              </div>
 	          </div>
 	        </div>
@@ -126,7 +126,7 @@
 	                <div class="image mr-3 align-self-center">
 	                  <img src="images/person_2.jpg" alt="">
 	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
+	                <div class="name align-self-center">nouhaila mahi <span class="position">Illustrator Designer</span></div>
 	              </div>
 	          </div>
 	        </div>
@@ -139,7 +139,7 @@
 	                <div class="image mr-3 align-self-center">
 	                  <img src="images/person_3.jpg" alt="">
 	                </div>
-	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
+	                <div class="name align-self-center">alaa jabri <span class="position">Illustrator Designer</span></div>
 	              </div>
 	          </div>
 	        </div>
@@ -165,7 +165,7 @@
 	              <div class="image mr-3 align-self-center">
 	                <img src="images/person_3.jpg" alt="">
 	              </div>
-	              <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
+	              <div class="name align-self-center">salma wahdi <span class="position">Illustrator Designer</span></div>
 	            </div>
 	          </div>
 	        </div>

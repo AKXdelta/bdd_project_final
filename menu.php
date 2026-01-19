@@ -656,6 +656,22 @@
 		              		</div>
 		              	</div>
 		              </div>
+					  <a href="services.php" class="menu-link">Services</a>
+
+<style>
+  .menu-link {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu-link:hover {
+    background-color: #0056b3;
+  }
+</style>
 
 		              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
 		                <div class="row">

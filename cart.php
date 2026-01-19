@@ -103,7 +103,7 @@
 						        	<p>Far far away, behind the word mountains, far from the countries</p>
 						        </td>
 						        
-						        <td class="price">$4.90</td>
+						        <td class="price">40 DH</td>
 						        
 						        <td class="quantity">
 						        	<div class="input-group mb-3">
@@ -111,7 +111,7 @@
 					          	</div>
 					          </td>
 						        
-						        <td class="total">$4.90</td>
+						        <td class="total">40 DH</td>
 						      </tr><!-- END TR-->
 
 						      <tr class="text-center">
@@ -124,7 +124,7 @@
 						        	<p>Far far away, behind the word mountains, far from the countries</p>
 						        </td>
 						        
-						        <td class="price">$15.70</td>
+						        <td class="price">150 DH</td>
 						        
 						        <td class="quantity">
 						        	<div class="input-group mb-3">
@@ -132,7 +132,7 @@
 					          	</div>
 					          </td>
 						        
-						        <td class="total">$15.70</td>
+						        <td class="total">70 DH</td>
 						      </tr><!-- END TR-->
 						    </tbody>
 						  </table>
@@ -145,20 +145,20 @@
     					<h3>Cart Totals</h3>
     					<p class="d-flex">
     						<span>Subtotal</span>
-    						<span>$20.60</span>
+    						<span>60 DH</span>
     					</p>
     					<p class="d-flex">
     						<span>Delivery</span>
-    						<span>$0.00</span>
+    						<span>30 DH</span>
     					</p>
     					<p class="d-flex">
     						<span>Discount</span>
-    						<span>$3.00</span>
+    						<span>40 DH</span>
     					</p>
     					<hr>
     					<p class="d-flex total-price">
     						<span>Total</span>
-    						<span>$17.60</span>
+    						<span>170 DH</span>
     					</p>
     				</div>
     				<p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
@@ -183,7 +183,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>200 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
@@ -194,7 +194,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>40 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
@@ -205,7 +205,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>60 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
@@ -216,7 +216,7 @@
     					<div class="text text-center pt-4">
     						<h3><a href="#">Coffee Capuccino</a></h3>
     						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
+    						<p class="price"><span>50 DH</span></p>
     						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
     					</div>
     				</div>
