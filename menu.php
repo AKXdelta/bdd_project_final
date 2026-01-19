@@ -403,7 +403,7 @@
         			<div class="desc pl-3">
 	        			<div class="d-flex text align-items-center">
 	        				<h3><span>TAGLIATELLE PRIMAVERA</span></h3>
-	        				<span class="price">1800.00DHS</span>
+	        				<span class="price">180.00DHS</span>
 	        			</div>
 	        			<div class="d-block">
 	        		       <p> Pâtes aux légumes de saison</p>
