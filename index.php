@@ -67,7 +67,7 @@
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading">Welcome</span>
               <h1 class="mb-4">The Best Restaurant Testing Experience</h1>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+              <p><a href="menu.php" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="menu.php" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
 
           </div>

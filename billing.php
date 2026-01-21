@@ -4,7 +4,7 @@ $host = "127.0.0.1";
 $dbname = "reservation";
 $username = "root";
 $password = "";
-$port = "3307"; // Mets ici le port correct de ton MySQL
+$port = "3307"; 
 
 try {
     $pdo = new PDO(
@@ -19,7 +19,6 @@ try {
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    // Récupérer les données du formulaire
     $first_name = $_POST["first_name"];
     $last_name  = $_POST["last_name"];
     $area       = $_POST["area"];
@@ -29,14 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email      = $_POST["email"];
     $payment    = $_POST["payment_method"];
 
-    // Préparer la requête SQL avec placeholders
     $sql = "INSERT INTO billing_details
             (first_name, last_name, area, street_address, apartment, phone, email, payment_method)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $pdo->prepare($sql);
-
-    // Exécuter la requête avec les valeurs
     $stmt->execute([
         $first_name,
         $last_name,
@@ -48,7 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $payment
     ]);
 
-    // Redirection après enregistrement
     header("Location: order-success.php");
     exit;
 }
