@@ -1080,7 +1080,7 @@
 		              		</div>
 		              	</div>
 		              </div>
-					  <a href="services.php" class="menu-link">Services</a>
+					 
 
 <style>
   .menu-link {
